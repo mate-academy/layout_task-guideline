@@ -12,11 +12,11 @@
 
 > Learn [Useful GIT and NPM commands](https://mate-academy.github.io/fe-program/css/useful-commands)
 
-**IMPORTANT !!!!!!!**
+## !!!!!!!!! MUST READ !!!!!!!
 
-> Do NOT place your projects folder on desktop (To avoid permissions issues).
-> It is better to put it into `D:\projects` or `C:\Users\YourName\projects`.
-> But there should not be spaces in the path like this `C:\Users\Your Name\projects`.
+To avoid permissions issues **DO NOT place your projects folder on desktop**
+It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
+There should be **NO SPACES spaces in the path**. e.g. `C:\Users\Your Name\projects`.
 
 ## Follow this steps:
 
