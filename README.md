@@ -10,13 +10,13 @@
   - Create a repo following [this workflow](./github-workflow.md)
 </details>
 
-> Learn [Useful GIT and NPM commands](https://mate-academy.github.io/fe-program/css/useful-commands)
+> Learn [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 
 ## !!!!!!!!! MUST READ !!!!!!!
 
 To avoid permissions issues **DO NOT place your projects folder on desktop**
-It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
 There should be **NO SPACES spaces in the path**. e.g. `C:\Users\Your Name\projects`.
+It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
 
 ## Follow this steps:
 
