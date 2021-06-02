@@ -342,7 +342,7 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 - `npm run deploy` publishes the page and test report to `gh-pages` 
 
 ## Useful links
-- [NPM and GIT commands](https://mate-academy.github.io/fe-program/css/useful-commands)
+- [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 - [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
 - [Working with figma](./figma.md)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
