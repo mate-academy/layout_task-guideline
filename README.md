@@ -12,6 +12,8 @@
 
 > Learn [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 
+> Learn [Terminal commands](https://mate-academy.github.io/fe-program/tools/terminal/useful-commands)
+
 ## !!!!!!!!! MUST READ !!!!!!!
 
 To avoid permissions issues **DO NOT place your projects folder on desktop**
@@ -343,6 +345,7 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 
 ## Useful links
 - [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
+- [Terminal commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 - [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
 - [Working with figma](./figma.md)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
