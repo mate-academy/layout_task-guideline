@@ -17,7 +17,7 @@
 ## !!!!!!!!! MUST READ !!!!!!!
 
 To avoid permissions issues **DO NOT place your projects folder on desktop**
-There should be **NO SPACES spaces in the path**. e.g. `C:\Users\Your Name\projects`.
+There should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`.
 It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
 
 ## Follow this steps:
@@ -297,7 +297,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     </details>
 
 15. Run `npm run deploy` to publish your site to GitHub pages.
-    - Open `Setting` tab of your repo on Github and scroll down to `Github pages` section
+    - Open `Setting` tab of your repo on Github and choose `Pages` section from panel on the left
     - There should be a link to your public page (the same as `DEMO LINK` in your `readme.md`)
     - Wait until it becomes green (refresh a page if needed)
     - Open the page and check if you see the all the latest changes
