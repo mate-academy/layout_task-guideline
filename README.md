@@ -7,7 +7,7 @@
   - Finish [githowto](https://githowto.com/)
   - Learn how to use [GitHub Pages](https://pages.github.com/)
   - Read about [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-  - Create a repo following [this workflow](./github-workflow.md)
+  - Create a repo following [this workflow](github-workflow.md)
 </details>
 
 > Learn [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
@@ -26,15 +26,15 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
    <details>
      <summary>Show the screenshot</summary>
   
-     - Before the fork ![How to fork the repo](./images/fork-the-repo.png)
-     - After the fork ![After the repo fork](./images/after-the-repo-fork.png)
+     - Before the fork ![How to fork the repo](images/fork-the-repo.png)
+     - After the fork ![After the repo fork](images/after-the-repo-fork.png)
    </details>
 
    <details>
      <summary>If you want to delete the repo</summary>
 
-     - Open project settings ![Open project settings](./images/open-project-settings.png)
-     - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
+     - Open project settings ![Open project settings](images/open-project-settings.png)
+     - Delete the repo ![Delete the repo](images/delete-the-repo.png)
    </details>
 
 2. **Clone** the forked repo `git clone the-link-from-github`
@@ -45,25 +45,25 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
      - The path to your projects should not contain spaces or non-latin letters
      - run `git clone the-link-from-github`
      - The project link should have your name but not `mate-academy`
-       ![Clone the repo](./images/clone-the-repo.png)
+       ![Clone the repo](images/clone-the-repo.png)
    </details>
    
    <details>
      <summary>How to open Git Bash</summary>
    
-     ![Git Bash here](./images/git-bash-here.png)
+     ![Git Bash here](images/git-bash-here.png)
    </details>
 
    <details>
      <summary>How to paste the project URL to Terminal (Git Bash)</summary>
    
-     ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
+     ![How to paste the URL into terminal](images/paste-url-to-terminal.png)
    </details>
 
    <details>
      <summary>Clone success screenshot</summary>
    
-     ![Clone success](./images/clone-success.png)
+     ![Clone success](images/clone-success.png)
    </details>
 
 3. Open the project in IDE
@@ -73,13 +73,13 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
    <details>
      <summary>Project is opened correctly</summary>
    
-     ![The project opened correctly](./images/project-in-vscode-correct.png)
+     ![The project opened correctly](images/project-in-vscode-correct.png)
    </details>
 
    <details>
      <summary>Project is opened WRONG</summary>
    
-     ![The project opened correctly](./images/project-in-vscode-wrong.png)
+     ![The project opened correctly](images/project-in-vscode-wrong.png)
    </details>
 
 4. Open the Terminal in your IDE
@@ -94,8 +94,8 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
    <details>
      <summary>How to Select default shell</summary>
    
-     - Choose `Select default shell` option ![Select default shell](./images/select-default-shell.png)
-     - Select Git Bash (Windows) or zsh (macOS) ![Default shell popup](./images/default-shell-popup.png)
+     - Choose `Select default shell` option ![Select default shell](images/select-default-shell.png)
+     - Select Git Bash (Windows) or zsh (macOS) ![Default shell popup](images/default-shell-popup.png)
      - Close all the opened terminals
      - All the new terminals will be Git Bash (or zsh)
    </details>
@@ -104,29 +104,29 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
    <details>
      <summary>If you don't have Node.js</summary>
    
-     ![If you don't have Node.js](./images/if-you-have-node-15.png)
+     ![If you don't have Node.js](images/if-you-have-node-15.png)
    </details>
    
    <details>
      <summary>If you run `npm i` outside the project</summary>
    
-     ![If you run npm install outside the project](./images/if-you-run-npm-i-outside-the-project.png)
+     ![If you run npm install outside the project](images/if-you-run-npm-i-outside-the-project.png)
    </details>
    
    <details>
      <summary>If you have Node.js 15 or later</summary>
    
-     ![If you have Node.js 15 or later](./images/if-you-have-node-15.png)
+     ![If you have Node.js 15 or later](images/if-you-have-node-15.png)
    </details>
    
    <details>
      <summary>How to reinstall Node.js</summary>
    
-     - Open `Add and remove programs` ![Open Add and Remove programs](./images/open-add-remove-programs.png)
-     - Uninstall Node.js ![Uninstall Node.js](./images/uninstall-node-js.png)
-     - Download Node.js LTS ![Download Node.js LTS](./images/download-node-14.png)
-     - Delete `node_modules` ![Delete node_modules](./images/delete-node-modules.png)
-     - Run `npm i` again ![npm install success](./images/npm-install-success.png)
+     - Open `Add and remove programs` ![Open Add and Remove programs](images/open-add-remove-programs.png)
+     - Uninstall Node.js ![Uninstall Node.js](images/uninstall-node-js.png)
+     - Download Node.js LTS ![Download Node.js LTS](images/download-node-14.png)
+     - Delete `node_modules` ![Delete node_modules](images/delete-node-modules.png)
+     - Run `npm i` again ![npm install success](images/npm-install-success.png)
    </details>
 
 6. Run `npm start` to check if it works.
@@ -142,14 +142,14 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
      <summary>If the page is empty after you added some text</summary>
    
      - Update the page by pressing `ctrl + r` (`cmd + r` for macOS)
-     - If the page is still empty check if you saved the changes ![Autosave is disabled](./images/autosave-is-disabled.png)
-     - Enable autosave ![Enable autosave](./images/enable-autosave.png)
+     - If the page is still empty check if you saved the changes ![Autosave is disabled](images/autosave-is-disabled.png)
+     - Enable autosave ![Enable autosave](images/enable-autosave.png)
    </details>
    
    <details>
      <summary>If the page is opened at the other port (not :8080)</summary>
    
-     - If you see the other port ![Wrong port](./images/wrong-server-port.png)
+     - If you see the other port ![Wrong port](images/wrong-server-port.png)
      - It means you already have another terminal running `npm start` command (maybe it is another project)
      - Stop the `npm start` command in current terminal by pressing `ctrl + c` (all operating systems)
      - Close the other terminal running `npm start`
@@ -162,24 +162,24 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
    <details>
      <summary>Show the screenshot</summary>
    
-     ![Open one more terminal](./images/open-one-more-terminal.png)
+     ![Open one more terminal](images/open-one-more-terminal.png)
    </details>
 
 8. Create the `develop` branch (run `git checkout -b develop`)
    <details>
      <summary>If you see that develop already exists</summary>
    
-     ![Develop already exists](./images/develop-already-exists.png)
-     - run `git branch` to see all existent branches ![Show git branches](./images/show-git-branch.png)
+     ![Develop already exists](images/develop-already-exists.png)
+     - run `git branch` to see all existent branches ![Show git branches](images/show-git-branch.png)
      - If `develop` is marked with `*` then everything is correct
-     - Otherwise, run `git checkout develop` (without `-b` key) ![Switch to develop](./images/switch-to-develop.png)
+     - Otherwise, run `git checkout develop` (without `-b` key) ![Switch to develop](images/switch-to-develop.png)
    </details>
 
 9. Open `readme.md` file and replace a text `<your_account>` with your Github username in the `DEMO LINK` and `TEST REPORT LINK`
    <details>
      <summary>Example</summary>
    
-     ![Update demo link](./images/update-demo-link.png)
+     ![Update demo link](images/update-demo-link.png)
    </details>
 
 10. Implement the task described in `readme.md`. 
@@ -191,24 +191,24 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
 
       - Fix all the errors and run the command again
 
-      ![Linter errors](./images/linter-errors.png)
+      ![Linter errors](images/linter-errors.png)
     </details>
 
     <details>
       <summary>How to find the lines with linter errors</summary>
     
-      ![The lines with errors](./images/lines-with-linter-errors.png)
+      ![The lines with errors](images/lines-with-linter-errors.png)
     </details>
 
     <details>
       <summary>This error means you need to fix CRLF</summary>
     
-      ![CRLF linter error](./images/crlf-linter-error.png)
+      ![CRLF linter error](images/crlf-linter-error.png)
 
       - run `git config --global core.autocrlf false`
       - and fix the CRLF in all the files you changed
   
-      ![CRLF in current file](./images/crlf-error-after-global-config.png)
+      ![CRLF in current file](images/crlf-error-after-global-config.png)
     </details>
 
     <details>
@@ -217,8 +217,8 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       - Here is [the documentation](https://code.visualstudio.com/docs/languages/html#_formatting) 
       - Run `Alt + Shift + F` to format the document
 
-      ![HTML autoformat settings](./images/html-autoformat-settings.png)
-      ![HTML autoformat json](./images/html-autoformat-json.png)
+      ![HTML autoformat settings](images/html-autoformat-settings.png)
+      ![HTML autoformat json](images/html-autoformat-json.png)
     </details>
 
 12. To check if your solution matches all the expectations you can run `npm test`
@@ -229,14 +229,14 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     <details>
       <summary>If you see a failing test</summary>
   
-      ![Failed tests](./images/failed-tests.png)
-      ![How to compare a test with reference](./images/how-to-compare-test-with-reference.png)
+      ![Failed tests](images/failed-tests.png)
+      ![How to compare a test with reference](images/how-to-compare-test-with-reference.png)
     </details>
     
     <details>
       <summary>If you see ERR_CONNECTION_REFUSED</summary>
 
-      ![Connection refused error](./images/connection-refused-error.png)
+      ![Connection refused error](images/connection-refused-error.png)
 
       - it means you don't have a running server
       - Open new terminal and run `npm start`
@@ -253,14 +253,14 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       - it means you forgot to configure you GIT name and email
       - See the commands above the error message and run them one by one with your email and name
 
-      ![If you forgot to set GIT name and email](./images/forgot-to-configure-git.png)
-      ![Set GIT name and email](./images/set-git-name-and-email.png)
+      ![If you forgot to set GIT name and email](images/forgot-to-configure-git.png)
+      ![Set GIT name and email](images/set-git-name-and-email.png)
     </details>
 
     <details>
       <summary>no changes added to commit</summary>
     
-      ![No changes added to commit](./images/no-changes-added-to-commit.png)
+      ![No changes added to commit](images/no-changes-added-to-commit.png)
     </details>
     
     <details>
@@ -268,15 +268,15 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     
       - You forgot to fix CRLF 
   
-      ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
+      ![Forgot to fix CRLF](images/forgot-to-fix-crlf.png)
     </details>
     
 14. Send your code to Github by running `git push origin develop`
     <details>
       <summary>failed to push some refs</summary>
 
-      ![Forgot to create develop](./images/forgot-to-create-develop.png)
-      ![Reset and create develop](./images/reset-head-and-create-develop.png)
+      ![Forgot to create develop](images/forgot-to-create-develop.png)
+      ![Reset and create develop](images/reset-head-and-create-develop.png)
     
       - Commit changes again after creating `develop` branch 
     </details>
@@ -284,16 +284,16 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     <details>
       <summary>If you asked for the Authorization</summary>
     
-      ![Github auth popup](./images/github-auth-popup.png)
-      ![Authorize GIT credentials manager](./images/authorize-git-credentials-manager.png)
-      ![Push success](./images/push-success.png)
+      ![Github auth popup](images/github-auth-popup.png)
+      ![Authorize GIT credentials manager](images/authorize-git-credentials-manager.png)
+      ![Push success](images/push-success.png)
     </details>
 
     <details>
       <summary>fatal: unable to access</summary>
     
-      ![Permission denied](./images/permissions-denied.png)
-      ![Add correct origin](./images/add-correct-origin.png)
+      ![Permission denied](images/permissions-denied.png)
+      ![Add correct origin](images/add-correct-origin.png)
     </details>
 
 15. Run `npm run deploy` to publish your site to GitHub pages.
@@ -312,7 +312,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
 
       - You forgot to put your Github name into `DEMO_LINK` and `TEST_REPORT_LINK`
 
-      ![Forgot to fix DEMO LINK](./images/forgot-to-put-your-name-to-demo-link.png)
+      ![Forgot to fix DEMO LINK](images/forgot-to-put-your-name-to-demo-link.png)
     </details>
 
     <details>
@@ -347,6 +347,6 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 - [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 - [Terminal commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 - [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
-- [Working with figma](./figma.md)
+- [Working with figma](figma.md)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
 - [How to use pixel perfect extension](https://youtu.be/zqRko57AurU)
