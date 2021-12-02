@@ -124,7 +124,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
    
      - Open `Add and remove programs` ![Open Add and Remove programs](./images/open-add-remove-programs.png)
      - Uninstall Node.js ![Uninstall Node.js](./images/uninstall-node-js.png)
-     - Download Node.js LTS ![Download Node.js LTS](./images/download-node-14.png)
+     - Download and install Node.js https://nodejs.org/download/release/v14.16.1/ 
      - Delete `node_modules` ![Delete node_modules](./images/delete-node-modules.png)
      - Run `npm i` again ![npm install success](./images/npm-install-success.png)
    </details>
