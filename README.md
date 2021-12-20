@@ -23,65 +23,65 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
 ## Follow this steps:
 1. Open the task on the platform and click `Make a fork`
 2. Open the project on Github and **Fork** the repo.
-   <details>
-     <summary>Show the screenshot</summary>
+    <details>
+      <summary>Show the screenshot</summary>
   
-     - Before the fork ![How to fork the repo](./images/fork-the-repo.png)
-     - After the fork ![After the repo fork](./images/after-the-repo-fork.png)
-   </details>
+      - Before the fork ![How to fork the repo](./images/fork-the-repo.png)
+      - After the fork ![After the repo fork](./images/after-the-repo-fork.png)
+    </details>
 
-   <details>
-     <summary>If you want to delete the repo</summary>
+    <details>
+      <summary>If you want to delete the repo</summary>
 
-     - Open project settings ![Open project settings](./images/open-project-settings.png)
-     - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
-   </details>
+      - Open project settings ![Open project settings](./images/open-project-settings.png)
+      - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
+    </details>
 3. Update the topic on the platform to see that the button changed to `Open the task`
     - if not open personal data and connect your github account
 4. **Clone** the forked repo be running `git clone the-link-from-github` (!!! Replace `the-link-from-github` with link from your repo)
-   <details>
-     <summary>Show the details</summary>
+    <details>
+      <summary>Show the details</summary>
 
-     - Open **Git Bash** (Windows) or **Terminal** (macOS) in your projects folder
-     - The path to your projects should not contain spaces or non-latin letters
-     - run `git clone the-link-from-github`
-     - The project link should have your name but not `mate-academy`
-       ![Clone the repo](./images/clone-the-repo.png)
-   </details>
+      - Open **Git Bash** (Windows) or **Terminal** (macOS) in your projects folder
+      - The path to your projects should not contain spaces or non-latin letters
+      - run `git clone the-link-from-github`
+      - The project link should have your name but not `mate-academy`
+        ![Clone the repo](./images/clone-the-repo.png)
+    </details>
    
-   <details>
-     <summary>How to open Git Bash</summary>
+    <details>
+      <summary>How to open Git Bash</summary>
    
-     ![Git Bash here](./images/git-bash-here.png)
-   </details>
+      ![Git Bash here](./images/git-bash-here.png)
+    </details>
 
-   <details>
-     <summary>How to paste the project URL to Terminal (Git Bash)</summary>
+    <details>
+      <summary>How to paste the project URL to Terminal (Git Bash)</summary>
    
-     ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
-   </details>
+      ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
+    </details>
 
-   <details>
-     <summary>Clone success screenshot</summary>
+    <details>
+      <summary>Clone success screenshot</summary>
    
-     ![Clone success](./images/clone-success.png)
-   </details>
+      ![Clone success](./images/clone-success.png)
+    </details>
 
 5. Open the project in IDE
-   - run `code layout_hello-world`
-   - or just run VSCode and open the project folder
+    - run `code layout_hello-world`
+    - or just run VSCode and open the project folder
   
-   <details>
-     <summary>Project is opened correctly</summary>
+    <details>
+      <summary>Project is opened correctly</summary>
    
-     ![The project opened correctly](./images/project-in-vscode-correct.png)
-   </details>
+      ![The project opened correctly](./images/project-in-vscode-correct.png)
+    </details>
 
-   <details>
-     <summary>Project is opened WRONG</summary>
+    <details>
+      <summary>Project is opened WRONG</summary>
    
-     ![The project opened correctly](./images/project-in-vscode-wrong.png)
-   </details>
+      ![The project opened correctly](./images/project-in-vscode-wrong.png)
+    </details>
 
 6. Open the Terminal in your IDE
    <details>
@@ -177,11 +177,11 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     </details>
 
 11. Open `readme.md` file and replace a text `<your_account>` with your Github username in the `DEMO LINK` and `TEST REPORT LINK`
-   <details>
-     <summary>Example</summary>
-   
-     ![Update demo link](./images/update-demo-link.png)
-   </details>
+    <details>
+      <summary>Example</summary>
+    
+      ![Update demo link](./images/update-demo-link.png)
+    </details>
 
 12. Implement the task described in the `readme.md`. 
     - You should write the code in `index.html` and other files inside `src` folder.
