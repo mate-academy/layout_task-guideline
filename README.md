@@ -246,7 +246,6 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     </details>
 
 15. Add your changed or created files to commit history `git add path/to/changed_file path/to/new_file`
-`git commit -am 'some message'`
     - You can add all files in a certain folder using `.` character: `git add src/.`
     - Don't add irrelevant files at this point, like `package-lock.json` or test snapshots.
     - You can always check which files were changes or added using `git status` command.
