@@ -347,7 +347,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     </details>
     
 20. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
-21. To update you PR repeat steps 13-17 (no need to create the PR one more time).
+21. To update you PR repeat steps 13-18 (no need to create the PR one more time).
 
 > If you need an ADDITIONAL CODE REVIEW, click on re-request button at the PR page.
 ![Image of re-request button](https://user-images.githubusercontent.com/38065883/104471439-89929200-55c3-11eb-824a-596bfb8aa246.png)
