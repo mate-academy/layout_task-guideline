@@ -245,8 +245,13 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       - Run `npm test` again to see the results
     </details>
 
-15. Save your changes `git commit -am 'some message'`
-    - If you created some new files you should add them before running commit `git add path/to/new_file1 path/to/new_file2`.
+15. Add your changed or created files to commit history `git add path/to/changed_file path/to/new_file`
+    - You can add all files in a certain folder using `.` character: `git add src/.`
+    - Don't add irrelevant files at this point, like `package-lock.json` or test snapshots.
+    - You can always check which files were changes or added using `git status` command.
+
+16. Create a commit with all added files using `git commit -m 'commit message'`
+    - Commit message should describe the changes made in the files, e.g. `'added header'`
       
     <details>
       <summary>fatal: unable to auto detect email address</summary>
@@ -272,7 +277,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
     </details>
     
-16. Send your code to Github by running `git push origin develop`
+17. Send your code to Github by running `git push origin develop`
     <details>
       <summary>failed to push some refs</summary>
 
@@ -297,7 +302,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Add correct origin](./images/add-correct-origin.png)
     </details>
 
-17. Run `npm run deploy` to publish your site to GitHub pages.
+18. Run `npm run deploy` to publish your site to GitHub pages.
     - Open `Setting` tab of your repo on Github and choose `Pages` section from panel on the left
     - There should be a link to your public page (the same as `DEMO LINK` in your `readme.md`)
     - Wait until it becomes green (refresh a page if needed)
@@ -305,7 +310,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     - If the page is not updated yet, just add `?any-random-text` after the URL in the Browser
       and press `Enter` to reload the page discarding cached data (if any)
 
-18. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
+19. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
     - Select `Pull requsts`
     - Click `New pull request` button
     - Change the branch to `develop`
@@ -341,8 +346,8 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Forgot to run tests before deploy](images/forgot-to-run-tests-before-deploy.png)
     </details>
     
-19. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
-20. To update you PR repeat steps 13-17 (no need to create the PR one more time).
+20. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
+21. To update you PR repeat steps 13-17 (no need to create the PR one more time).
 
 > If you need an ADDITIONAL CODE REVIEW, click on re-request button at the PR page.
 ![Image of re-request button](https://user-images.githubusercontent.com/38065883/104471439-89929200-55c3-11eb-824a-596bfb8aa246.png)
