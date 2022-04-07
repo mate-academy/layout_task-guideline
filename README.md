@@ -277,8 +277,6 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
   
       ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
     </details>
-
-    
     
 17. Send your code to Github by running `git push origin develop`
     <details>
