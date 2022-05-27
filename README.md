@@ -36,9 +36,9 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       - Open project settings ![Open project settings](./images/open-project-settings.png)
       - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
     </details>
-3. Update the topic on the platform to see that the button changed to `Open the task`
+### 3. Update the topic on the platform to see that the button changed to `Open the task`
     - if not open personal data and connect your github account
-4. **Clone** the forked repo be running `git clone the-link-from-github` (!!! Replace `the-link-from-github` with link from your repo)
+### 4. **Clone** the forked repo be running `git clone the-link-from-github` (!!! Replace `the-link-from-github` with link from your repo)
     <details>
       <summary>Show the details</summary>
 
@@ -67,7 +67,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Clone success](./images/clone-success.png)
     </details>
 
-5. Open the project in IDE
+### 5. Open the project in IDE
     - run `code layout_hello-world`
     - or just run VSCode and open the project folder
   
@@ -83,7 +83,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![The project opened correctly](./images/project-in-vscode-wrong.png)
     </details>
 
-6. Open the Terminal in your IDE
+### 6. Open the Terminal in your IDE
    <details>
      <summary>Show the details</summary>
    
@@ -101,7 +101,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
      - All the new terminals will be Git Bash (or zsh)
    </details>
 
-7. Run `npm install` (or just `npm i`).
+### 7. Run `npm install` (or just `npm i`).
    <details>
      <summary>If you don't have Node.js</summary>
    
@@ -130,7 +130,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
      - Run `npm i` again ![npm install success](./images/npm-install-success.png)
    </details>
 
-8. Run `npm start` to check if it works. (Terminal command will never finish, so you need one mote terminal)
+### 8. Run `npm start` to check if it works. (Terminal command will never finish, so you need one mote terminal)
    <details>
      <summary>Show the details</summary>
 
@@ -159,14 +159,14 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
      - If the URL is still wrong, just restart the computer
    </details>
 
-9. Open one more terminal for the next steps.
+### 9. Open one more terminal for the next steps.
    <details>
      <summary>Show the screenshot</summary>
    
      ![Open one more terminal](./images/open-one-more-terminal.png)
    </details>
 
-10. Create the `develop` branch (run `git checkout -b develop`)
+### 10. Create the `develop` branch (run `git checkout -b develop`)
     <details>
       <summary>If you see that develop already exists</summary>
    
@@ -176,17 +176,17 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       - Otherwise, run `git checkout develop` (without `-b` key) ![Switch to develop](./images/switch-to-develop.png)
     </details>
 
-11. Open `readme.md` file and replace a text `<your_account>` with your Github username in the `DEMO LINK` and `TEST REPORT LINK`
+### 11. Open `readme.md` file and replace a text `<your_account>` with your Github username in the `DEMO LINK` and `TEST REPORT LINK`
     <details>
       <summary>Example</summary>
     
       ![Update demo link](./images/update-demo-link.png)
     </details>
 
-12. Implement the task described in the `readme.md`. 
+### 12. Implement the task described in the `readme.md`. 
     - You should write the code in `index.html` and other files inside `src` folder.
     
-13. Run `npm run lint` to check the code style.
+### 13. Run `npm run lint` to check the code style.
     <details>
       <summary>If you have some errors</summary>
 
@@ -222,7 +222,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![HTML autoformat json](./images/html-autoformat-json.png)
     </details>
 
-14. To check if your solution matches all the expectations you can run `npm test`
+### 14. To check if your solution matches all the expectations you can run `npm test`
     - If test results are not opened in a browser, check if you fixed all the code style errors (`npm run lint`)
     - If you can't run tests for some weird reason just use a screenshot from
       `backstop_data/bitmaps_reference/Entire_document.png` to ensure your page looks as expected.
@@ -245,12 +245,12 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       - Run `npm test` again to see the results
     </details>
 
-15. Add your changed or created files to commit history `git add path/to/changed_file path/to/new_file`
+### 15. Add your changed or created files to commit history `git add path/to/changed_file path/to/new_file`
     - You can add all files in a certain folder using `.` character: `git add src/.`
     - Don't add irrelevant files at this point, like `package-lock.json` or test snapshots.
     - You can always check which files were changes or added using `git status` command.
 
-16. Create a commit with all added files using `git commit -m 'commit message'`
+### 16. Create a commit with all added files using `git commit -m 'commit message'`
     - Commit message should describe the changes made in the files, e.g. `'added header'`
       
     <details>
@@ -277,7 +277,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
     </details>
     
-17. Send your code to Github by running `git push origin develop`
+### 17. Send your code to Github by running `git push origin develop`
     <details>
       <summary>failed to push some refs</summary>
 
@@ -302,7 +302,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Add correct origin](./images/add-correct-origin.png)
     </details>
 
-18. Run `npm run deploy` to publish your site to GitHub pages.
+### 18. Run `npm run deploy` to publish your site to GitHub pages.
     - Open `Setting` tab of your repo on Github and choose `Pages` section from panel on the left
     - There should be a link to your public page (the same as `DEMO LINK` in your `readme.md`)
     - Wait until it becomes green (refresh a page if needed)
@@ -310,7 +310,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
     - If the page is not updated yet, just add `?any-random-text` after the URL in the Browser
       and press `Enter` to reload the page discarding cached data (if any)
 
-19. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
+### 19. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
     - Select `Pull requsts`
     - Click `New pull request` button
     - Change the branch to `develop`
@@ -346,8 +346,8 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
       ![Forgot to run tests before deploy](images/forgot-to-run-tests-before-deploy.png)
     </details>
     
-20. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
-21. To update you PR repeat steps 13-18 (no need to create the PR one more time).
+### 20. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
+### 21. To update you PR repeat steps 13-18 (no need to create the PR one more time).
 
 > If you need an ADDITIONAL CODE REVIEW, click on re-request button at the PR page.
 ![Image of re-request button](https://user-images.githubusercontent.com/38065883/104471439-89929200-55c3-11eb-824a-596bfb8aa246.png)
