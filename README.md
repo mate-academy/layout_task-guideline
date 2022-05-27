@@ -21,8 +21,8 @@ There should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`.
 It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
 
 ## Follow this steps:
-1. Open the task on the platform and click `Make a fork`
-2. Open the project on Github and **Fork** the repo.
+### 1. Open the task on the platform and click `Make a fork`
+### 2. Open the project on Github and **Fork** the repo.
     <details>
       <summary>Show the screenshot</summary>
   
