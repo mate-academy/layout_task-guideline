@@ -306,6 +306,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
 </details>
 
 ### 18. Run `npm run deploy` to publish your site to GitHub pages.
+- If you are getting some errors run `npm run deploy -- -l` for more information
 - Open `Setting` tab of your repo on Github and choose `Pages` section from panel on the left
 - There should be a link to your public page (the same as `DEMO LINK` in your `readme.md`)
 - Wait until it becomes green (refresh a page if needed)
