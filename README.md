@@ -314,7 +314,9 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
 - If the page is not updated yet, just add `?any-random-text` after the URL in the Browser
   and press `Enter` to reload the page discarding cached data (if any)
 
-### 19. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
+### 19. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
+
+### 20. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
 - Select `Pull requsts`
 - Click `New pull request` button
 - Change the branch to `develop`
@@ -349,8 +351,7 @@ It is better to put repositories into `D:\projects` or `C:\Users\YourName\projec
 
   ![Forgot to run tests before deploy](images/forgot-to-run-tests-before-deploy.png)
 </details>
-    
-### 20. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
+
 ### 21. To update you PR repeat steps 13-18 (no need to create the PR one more time).
 
 > If you need an ADDITIONAL CODE REVIEW, click on re-request button at the PR page.
