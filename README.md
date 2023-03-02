@@ -131,7 +131,7 @@ And wait until it downloads all the packages and finish.
 
 ### 8. Run `npm start` to check if it works
 
-The command in terminal will never finish, so you need one more terminal tab ``ctrl + shift + ` `` or ``cmd + shift + ` ``.
+The command in the terminal will never finish.
 
 - The command should open your browser at `http://localhost:8080/` opened.
 - At this point you should see the starting markup of the page.
@@ -159,11 +159,10 @@ The command in terminal will never finish, so you need one more terminal tab ``c
 </details>
 
 ### 9. Open one more terminal for the next steps.
-<details>
- <summary>Show the screenshot</summary>
 
- ![Open one more terminal](./images/open-one-more-terminal.png)
-</details>
+Just press ``ctrl + shift + ` `` or ``cmd + shift + ` ``.
+
+![Open one more terminal](./images/open-one-more-terminal.png)
 
 ### 10. Create the `develop` branch (run `git checkout -b develop`)
 <details>
