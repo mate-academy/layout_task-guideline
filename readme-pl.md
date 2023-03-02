@@ -158,7 +158,7 @@ Polecenie w terminalu nigdy się nie zakończy.
  - Jeśli adres URL nadal jest nieprawidłowy, po prostu uruchom ponownie komputer.
 </details>
 
-# 9. Otwórz kolejny terminal do wykonania kolejnych kroków.
+### 9. Otwórz kolejny terminal do wykonania kolejnych kroków.
 
 Użyj przycisku "+" lub naciśnij ``ctrl + shift + ` `` lub ``cmd + shift + ` ``.
 
@@ -263,7 +263,7 @@ Napraw swój kod HTML i CSS, aby Twoja strona była identyczna z oczekiwanym wyn
 ![How to compare a test with reference](./images/how-to-compare-test-with-reference.png)
 
 
-### Jeśli widzisz błąd ERR_CONNECTION_REFUSED
+#### Jeśli widzisz błąd ERR_CONNECTION_REFUSED
 
 ![Connection refused error](./images/connection-refused-error.png)
 
@@ -367,7 +367,7 @@ Aby sprawdzić, czy strona została pomyślnie opublikowana, musisz sprawdzić u
 - Poczekaj około 2 minut i ponownie załaduj `Settings > Pages`, aby zobaczyć link;
 - Otwórz go, aby zobaczyć swoją stronę.
 
-## 19. Utwórz Pull Request (PR)
+### 19. Utwórz Pull Request (PR)
 - Wybierz kartę `Pull requsts`;
 - Kliknij zielony przycisk `New pull request`;
 - Zmień gałąź `compare` po prawej stronie na `develop`;
