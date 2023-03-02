@@ -183,12 +183,11 @@ git switch -c develop
   - Otherwise, run `git checkout develop` (without `-b` key) ![Switch to develop](./images/switch-to-develop.png)
 </details>
 
-### 11. Open `readme.md` file and replace a text `<your_account>` with your Github username in the `DEMO LINK` and `TEST REPORT LINK`
-<details>
-  <summary>Example</summary>
+### 11. Update `DEMO LINK` and `TEST REPORT LINK`
+- open `readme.md` file
+- replace the text `<your_account>` with your Github username in the `DEMO LINK` and `TEST REPORT LINK`
 
-  ![Update demo link](./images/update-demo-link.png)
-</details>
+![Update demo link](./images/update-demo-link.png)
 
 ### 12. Implement the task described in the `readme.md`. 
 - You should write the code in `index.html` and other files inside `src` folder.
