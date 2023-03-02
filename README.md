@@ -160,13 +160,22 @@ The command in the terminal will never finish.
 
 ### 9. Open one more terminal for the next steps.
 
-Just press ``ctrl + shift + ` `` or ``cmd + shift + ` ``.
+Use `+` or just press ``ctrl + shift + ` `` or ``cmd + shift + ` ``.
 
 ![Open one more terminal](./images/open-one-more-terminal.png)
 
-### 10. Create the `develop` branch (run `git checkout -b develop`)
+### 10. Create the `develop` branch
+Run:
+```
+git checkout -b develop
+```
+or
+```
+git switch -c develop
+```
+
 <details>
-  <summary>If you see that develop already exists</summary>
+  <summary>If you see that "develop" branch already exists</summary>
 
   ![Develop already exists](./images/develop-already-exists.png)
   - run `git branch` to see all existent branches ![Show git branches](./images/show-git-branch.png)
