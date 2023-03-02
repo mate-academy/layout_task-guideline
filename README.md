@@ -129,17 +129,17 @@ And wait until it downloads all the packages and finish.
  - Run `npm i` again ![npm install success](./images/npm-install-success.png)
 </details>
 
-### 8. Run `npm start` to check if it works. (Terminal command will never finish, so you need one mote terminal)
-<details>
- <summary>Show the details</summary>
+### 8. Run `npm start` to check if it works
 
- - At this point you should see the starting markup of the page at `http://localhost:8080/` opened in your Google Chrome
- - Add some text to `src/index.html`. The change should be immediately updated in the browser.
- - If the page is not updated automatically press `ctrl + r` (`cmd + r` for macOS)
-</details>
+The command in terminal will never finish, so you need one more terminal tab ``ctrl + shift + ` `` or ``cmd + shift + ` ``.
+
+- The command should open your browser at `http://localhost:8080/` opened.
+- At this point you should see the starting markup of the page.
+- If the page is empty add some text to the `<body>` in the `src/index.html` file.
+- The text should appear in the browser.
 
 <details>
- <summary>If the page is empty after you added some text</summary>
+ <summary>If the page is still empty after you added some text</summary>
 
  - Update the page by pressing `ctrl + r` (`cmd + r` for macOS)
  - If the page is still empty check if you saved the changes ![Autosave is disabled](./images/autosave-is-disabled.png)
