@@ -303,7 +303,12 @@ git commit -m 'add task solution'
   ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
 </details>
 
-### 17. Send your code to Github by running `git push origin develop`
+### 17. Send your code to Github
+Run:
+```
+git push origin develop
+```
+
 <details>
   <summary>failed to push some refs</summary>
 
@@ -314,7 +319,7 @@ git commit -m 'add task solution'
 </details>
 
 <details>
-  <summary>If you asked for the Authorization</summary>
+  <summary>If you are asked for the Authorization</summary>
 
   ![Github auth popup](./images/github-auth-popup.png)
   ![Authorize GIT credentials manager](./images/authorize-git-credentials-manager.png)
@@ -328,36 +333,38 @@ git commit -m 'add task solution'
   ![Add correct origin](./images/add-correct-origin.png)
 </details>
 
-### 18. Run `npm run deploy` to publish your site to GitHub pages.
-- If you are getting some errors run `npm run deploy -- -l` for more information
-- Open `Setting` tab of your repo on Github and choose `Pages` section from panel on the left
-- There should be a link to your public page (the same as `DEMO LINK` in your `readme.md`)
-- Wait until it becomes green (refresh a page if needed)
-- Open the page and check if you see the all the latest changes
-- If the page is not updated yet, just add `?any-random-text` after the URL in the Browser
-  and press `Enter` to reload the page discarding cached data (if any)
+### 18. Publish your site to GitHub pages.
+Run:
+```
+npm run deploy
+```
 
-### 19. Check your work using checklist (look for it in the root directory of the project) before submitting it for review.
+> If you are getting some errors run `npm run deploy -- -l` to see more details
 
-### 20. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
-- Select `Pull requsts`
-- Click `New pull request` button
-- Change the branch to `develop`
-- Click `Create pull request` button
-- Copy `DEMO LINK` and `TEST REPORT LINK` from `readme.md` to the PR description.
-- Click `Create pull request` button one more time
+Deploy process requires some time to prepare your page on Github after the command is finished.
 
-<details>
-  <summary>New pull request</summary>
+To check if the page was deployed succesfully you need to check in the project settings on Github:
+- Open the forked repo on Github;
+- Click the `Setting` tab at the top;
+- Choose `Pages` section from the panel on the left;
+- There should be a link to your public page at the top (the same as your `DEMO LINK` in the `readme.md`)
+- If there are no link at the top check if `gh-pages` branch appeared in the repo;
+  - If not run `npm run deploy -- -l` to see more details
+- Wait for about 2 minutes and reload the `Settings > Pages` again to see the link;
+- Open it to see your page.
 
-  ![New pull request](./images/new-pull-request.png)
-</details>
+### 19. Create a Pull Request (PR)
+- Select `Pull requsts` tab;
+- Click `New pull request` green button;
+- Change the `compare` branch  at the right to `develop`;
+- Click `Create pull request` button;
+- Copy `DEMO LINK` and `TEST REPORT LINK` from `readme.md` to the PR description;
+- Click `Create pull request` button one more time;
+- Check that your `DEMO LINK` and `TEST REPORT LINK` work as expected (open the page and test results);
+- Check if the task appeared in the table
 
-<details>
-  <summary>Create pull request</summary>
-
-  ![Create pull request](./images/create-pull-request.png)
-</details>
+![New pull request](./images/new-pull-request.png)
+![Create pull request](./images/create-pull-request.png)
 
 <details>
   <summary>Check your DEMO LINK</summary>
@@ -400,4 +407,3 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 - [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
 - [Working with figma](./figma.md)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
-- [How to use pixel perfect extension](https://youtu.be/zqRko57AurU)
