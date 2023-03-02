@@ -190,9 +190,15 @@ git switch -c develop
 ![Update demo link](./images/update-demo-link.png)
 
 ### 12. Implement the task described in the `readme.md`. 
-- You should write the code in `index.html` and other files inside `src` folder.
 
-### 13. Run `npm run lint` to check the code style.
+You should write the code in `index.html` and other files inside `src` folder.
+
+### 13. Check the code style
+Run:
+```
+npm run lint
+```
+
 <details>
   <summary>If you have some errors</summary>
 
