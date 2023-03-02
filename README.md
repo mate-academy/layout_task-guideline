@@ -88,7 +88,7 @@
 - Check if the terminal in VSCode is Git Bash (Windows) of ZSH (macOS)
 
 <details>
- <summary>[Windows only] Click here to see how to make Git Bash the default terminal</summary>
+ <summary>Click here to see how select the default terminal in VSCode</summary>
 
  - Choose `Select default shell` option ![Select default shell](./images/select-default-shell.png)
  - Select Git Bash (Windows) or zsh (macOS) ![Default shell popup](./images/default-shell-popup.png)
@@ -97,6 +97,10 @@
 </details>
 
 ### 7. Run `npm install` (or just `npm i`).
+And wait until it downloads all the packages and finish.
+
+> Note: You should run it once for every new task
+
 <details>
  <summary>If you don't have Node.js</summary>
 
