@@ -8,14 +8,15 @@
 
 - to avoid permissions issues **DO NOT place your projects folder on desktop**;
 - there should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`;
-- it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/progects on MacOS.
+- it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/progects` on MacOS.
 
-## Before the first task
+## Before implementing the first task on Github
+
 - Open your profile page on [the MA Platform](https://mate.academy/profile)
 - Scroll down and press `Connect` button next to Github
 - Confirm Mate academy app authorization
 
-## Follow this steps:
+## Follow these instructions for all HTML/CSS tasks on Github:
 
 ### 1. Open the task on the MA platform
 - click `Make a fork` button
@@ -41,16 +42,21 @@
   - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
 </details>
 
-### 4. **Clone** the forked repo be running `git clone the-link-from-github` (!!! Replace `the-link-from-github` with link from your repo)
-<details>
-  <summary>Show the details</summary>
-
-  - Open **Git Bash** (Windows) or **Terminal** (macOS) in your projects folder
-  - The path to your projects should not contain spaces or non-latin letters
-  - run `git clone the-link-from-github`
-  - The project link should have your name but not `mate-academy`
-    ![Clone the repo](./images/clone-the-repo.png)
-</details>
+### 4. **Clone** the forked repo
+- click the green `Code` button;
+- select `HTTPS` tab;
+- ensure that link contains your Github name (NOT `mate-acaedmy`)
+- copy the link;
+- open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder;
+- run `pwd` in the terminal to check that you are in the `projects` folder;
+  - if not, navigate to it useing `cd` with a required path;
+- clone the repo by running `git clone` command with the URL you copied on Github
+    ```
+    git clone the-link-from-github
+    ```
+    
+![Clone the repo](./images/clone-the-repo.png)
+![Clone success](./images/clone-success.png)
 
 <details>
   <summary>How to open Git Bash</summary>
@@ -62,12 +68,6 @@
   <summary>How to paste the project URL to Terminal (Git Bash)</summary>
 
   ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
-</details>
-
-<details>
-  <summary>Clone success screenshot</summary>
-
-  ![Clone success](./images/clone-success.png)
 </details>
 
 ### 5. Open the project in IDE
