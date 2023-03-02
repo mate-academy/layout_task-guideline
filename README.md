@@ -72,6 +72,7 @@
 
 ### 5. Open the project in IDE
 - run `code layout_hello-world` in the terminal;
+- you will see the project name as a root folder name in VSCode;
 
 ![The project opened correctly](./images/project-in-vscode-correct.png)
 
@@ -82,16 +83,12 @@
 </details>
 
 ### 6. Open the Terminal in your IDE
-<details>
- <summary>Show the details</summary>
-
- - Use the shortcut ``ctrl + ` ``
- - Check if you are inside the project (The project name is the last part in the terminal)
- - Check if you use Git Bash (Windows) of zsh (macOS)
-</details>
+- Use the shortcut ``ctrl + ` `` (Windows) or ``cmd + ` `` (MacOS)
+- Check if you are inside the project (The project name is the last part in the terminal)
+- Check if the terminal in VSCode is Git Bash (Windows) of ZSH (macOS)
 
 <details>
- <summary>How to Select default shell</summary>
+ <summary>[Windows only] Click here to see how to make Git Bash the default terminal</summary>
 
  - Choose `Select default shell` option ![Select default shell](./images/select-default-shell.png)
  - Select Git Bash (Windows) or zsh (macOS) ![Default shell popup](./images/default-shell-popup.png)
