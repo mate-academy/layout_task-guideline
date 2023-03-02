@@ -1,14 +1,4 @@
 # How to solve the layout tasks on Github
-<details>
-  <summary><b>If you are not familiar with Git and Github</b></summary>
-
-  - **IMPORTANT** Install Node.js 14 (not 15)
-  - Watch the [Git and Github lesson](https://mate.academy/ru/learn/javascript-advanced/git-basics/theory)
-  - Finish [githowto](https://githowto.com/)
-  - Learn how to use [GitHub Pages](https://pages.github.com/)
-  - Read about [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-  - Create a repo following [this workflow](./github-workflow.md)
-</details>
 
 > Learn [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 
@@ -16,20 +6,16 @@
 
 ## !!!!!!!!! MUST READ !!!!!!!
 
-To avoid permissions issues **DO NOT place your projects folder on desktop**
-There should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`.
-It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
+- To avoid permissions issues **DO NOT place your projects folder on desktop**
+- There should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`.
+- It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
 
 ## Follow this steps:
 ### 1. Open the task on the platform and click `Make a fork`
 ### 2. Open the project on Github and **Fork** the repo.
 
-<details>
-  <summary>Show the screenshot</summary>
-
-  - Before the fork ![How to fork the repo](./images/fork-the-repo.png)
-  - After the fork ![After the repo fork](./images/after-the-repo-fork.png)
-</details>
+![How to fork the repo](./images/fork-the-repo.png)
+![After the repo fork](./images/after-the-repo-fork.png)
 
 <details>
   <summary>If you want to delete the repo</summary>
