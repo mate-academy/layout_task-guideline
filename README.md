@@ -264,13 +264,20 @@ Fix you HTML and CSS to make your page identical to the expected result.
 - Check if the page is opened at `http://localhost:8080/`;
 - Run `npm test` again to see the results.
 
-### 15. Add your changed or created files to commit history `git add path/to/changed_file path/to/new_file`
-- You can add all files in a certain folder using `.` character: `git add src/.`
+### 15. Prepare your changed files for saving
+```
+git add ./src`
+```
 - Don't add irrelevant files at this point, like `package-lock.json` or test snapshots.
 - You can always check which files were changes or added using `git status` command.
 
-### 16. Create a commit with all added files using `git commit -m 'commit message'`
-- Commit message should describe the changes made in the files, e.g. `'added header'`
+### 16. Save your changes
+
+Run the `commit` with a message describing what this code does.
+
+```
+git commit -m 'add task solution'
+```
 
 <details>
   <summary>fatal: unable to auto detect email address</summary>
