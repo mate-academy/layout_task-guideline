@@ -6,14 +6,22 @@
 
 ## !!!!!!!!! MUST READ !!!!!!!
 
-- To avoid permissions issues **DO NOT place your projects folder on desktop**
-- There should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`.
-- It is better to put repositories into `D:\projects` or `C:\Users\YourName\projects`.
+- to avoid permissions issues **DO NOT place your projects folder on desktop**;
+- there should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`;
+- it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/progects on MacOS.
+
+## Before the first task
+- Open your profile page on [the MA Platform](https://mate.academy/profile)
+- Scroll down and press `Connect` button next to Github
+- Confirm Mate academy app authorization
 
 ## Follow this steps:
-### 1. Open the task on the platform and click `Make a fork`
-### 2. Open the project on Github and **Fork** the repo.
 
+### 1. Open the task on the MA platform
+- click `Make a fork` button
+- it will open the task repo page on Github
+
+### 2. **Fork** the repo
 ![How to fork the repo](./images/fork-the-repo.png)
 ![After the repo fork](./images/after-the-repo-fork.png)
 
@@ -24,7 +32,7 @@
   - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
 </details>
 
-### 3. Update the topic on the platform to see that the button changed to `Open the task`
+### 3. Reload the topic page on the MA platform to see that the button changed to `Open the task`
 - if not open personal data and connect your github account
 
 ### 4. **Clone** the forked repo be running `git clone the-link-from-github` (!!! Replace `the-link-from-github` with link from your repo)
