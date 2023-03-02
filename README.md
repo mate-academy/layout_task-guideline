@@ -23,17 +23,23 @@
 
 ### 2. **Fork** the repo
 ![How to fork the repo](./images/fork-the-repo.png)
+
+### 3. You should see your name in the URL instead of "mate-academy"
 ![After the repo fork](./images/after-the-repo-fork.png)
 
+#### To check if the MA Platform sees the forked repo
+- Go back to the task on the MA platform
+- Reload the page
+- The button should change to `Open the task`
+- Get back to the forked repo on Github
+
+#### If you need to delete a forked repo
 <details>
-  <summary>If you want to delete the repo</summary>
+  <summary>Click here to see the instructions</summary>
 
   - Open project settings ![Open project settings](./images/open-project-settings.png)
   - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
 </details>
-
-### 3. Reload the topic page on the MA platform to see that the button changed to `Open the task`
-- if not open personal data and connect your github account
 
 ### 4. **Clone** the forked repo be running `git clone the-link-from-github` (!!! Replace `the-link-from-github` with link from your repo)
 <details>
