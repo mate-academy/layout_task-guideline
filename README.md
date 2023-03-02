@@ -234,28 +234,35 @@ npm run lint
   ![HTML autoformat json](./images/html-autoformat-json.png)
 </details>
 
-### 14. To check if your solution matches all the expectations you can run `npm test`
-- If test results are not opened in a browser, check if you fixed all the code style errors (`npm run lint`)
-- If you can't run tests for some weird reason just use a screenshot from
+### 14. Check if your solution matches all the expectations
+- read the `checklist.md`;
+- fix your code;
+- run the tests;
+    ```
+    npm test
+    ```
+- Test results should be openned in browser;
+- If not, check if you fixed all the code style errors (`npm run lint`)
+
+> If you can't run tests for some weird reason just use a screenshot from
   `backstop_data/bitmaps_reference/Entire_document.png` to ensure your page looks as expected.
 
-<details>
-  <summary>If you see a failing test</summary>
+#### If you see a failing test
 
-  ![Failed tests](./images/failed-tests.png)
-  ![How to compare a test with reference](./images/how-to-compare-test-with-reference.png)
-</details>
+Fix you HTML and CSS to make your page identical to the expected result.
 
-<details>
-  <summary>If you see ERR_CONNECTION_REFUSED</summary>
+![Failed tests](./images/failed-tests.png)
+![How to compare a test with reference](./images/how-to-compare-test-with-reference.png)
 
-  ![Connection refused error](./images/connection-refused-error.png)
 
-  - it means you don't have a running server
-  - Open new terminal and run `npm start`
-  - Check if the page is opened at `:8080` port (`http://localhost:8080/`)
-  - Run `npm test` again to see the results
-</details>
+### If you see ERR_CONNECTION_REFUSED
+
+![Connection refused error](./images/connection-refused-error.png)
+
+- check if you have another terminal tab running `npm start` command;
+- Open new terminal tab and run `npm start`;
+- Check if the page is opened at `http://localhost:8080/`;
+- Run `npm test` again to see the results.
 
 ### 15. Add your changed or created files to commit history `git add path/to/changed_file path/to/new_file`
 - You can add all files in a certain folder using `.` character: `git add src/.`
