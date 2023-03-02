@@ -255,7 +255,7 @@ Fix you HTML and CSS to make your page identical to the expected result.
 ![How to compare a test with reference](./images/how-to-compare-test-with-reference.png)
 
 
-### If you see ERR_CONNECTION_REFUSED
+#### If you see ERR_CONNECTION_REFUSED
 
 ![Connection refused error](./images/connection-refused-error.png)
 
@@ -382,7 +382,7 @@ To check if the page was deployed succesfully you need to check in the project s
   ![Forgot to run tests before deploy](images/forgot-to-run-tests-before-deploy.png)
 </details>
 
-### 21. To update you PR repeat steps 13-18 (no need to create the PR one more time).
+### 20. To update you PR repeat steps 13-18 (no need to create the PR one more time).
 
 > If you need an ADDITIONAL CODE REVIEW, click on re-request button at the PR page.
 ![Image of re-request button](https://user-images.githubusercontent.com/38065883/104471439-89929200-55c3-11eb-824a-596bfb8aa246.png)
