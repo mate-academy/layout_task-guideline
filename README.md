@@ -49,7 +49,7 @@
 - copy the link;
 - open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder;
 - run `pwd` in the terminal to check that you are in the `projects` folder;
-  - if not, navigate to it useing `cd` with a required path;
+  - if not, navigate to it using the `cd` command with a required path;
 - clone the repo by running `git clone` command with the URL you copied on Github
     ```
     git clone the-link-from-github
@@ -71,14 +71,9 @@
 </details>
 
 ### 5. Open the project in IDE
-- run `code layout_hello-world`
-- or just run VSCode and open the project folder
+- run `code layout_hello-world` in the terminal;
 
-<details>
-  <summary>Project is opened correctly</summary>
-
-  ![The project opened correctly](./images/project-in-vscode-correct.png)
-</details>
+![The project opened correctly](./images/project-in-vscode-correct.png)
 
 <details>
   <summary>Project is opened WRONG</summary>
