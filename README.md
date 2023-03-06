@@ -266,10 +266,14 @@ Fix you HTML and CSS to make your page identical to the expected result.
 
 ### 15. Prepare your changed files for saving
 ```
-git add ./src`
+git add ./src
 ```
 - Don't add irrelevant files at this point, like `package-lock.json` or test snapshots.
 - You can always check which files were changes or added using `git status` command.
+- Also don't forget to add readme.md file.
+```
+git add readme.md
+```
 
 ### 16. Save your changes
 
