@@ -365,7 +365,7 @@ To check if the page was deployed succesfully you need to check in the project s
 - Copy `DEMO LINK` and `TEST REPORT LINK` from `readme.md` to the PR description;
 - Click `Create pull request` button one more time;
 - Check that your `DEMO LINK` and `TEST REPORT LINK` work as expected (open the page and test results);
-- Check if the task appeared in the table
+- Check if the task appeared in the table (only for full-time students)
 
 ![New pull request](./images/new-pull-request.png)
 ![Create pull request](./images/create-pull-request.png)
