@@ -45,7 +45,7 @@
 ### 4. **Clone** the forked repo
 - click the green `Code` button;
 - select `HTTPS` tab;
-- ensure that link contains your Github name (NOT `mate-acaedmy`)
+- ensure that link contains your Github name (NOT `mate-academy`)
 - copy the link;
 - open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder;
 - run `pwd` in the terminal to check that you are in the `projects` folder;
