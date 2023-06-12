@@ -394,7 +394,7 @@ To check if the page was deployed succesfully you need to check in the project s
 ## Important 
 In order to allow us to review your homework - do not close PR and do not open several PR's.
 If there is a fork and PR, then any subsequent PR for that fork will be ignored
-and task status won't be synced to the platform.
+and it won't be synced to the platform, only the first PR made after the fork will
 
 - If you have closed the PR - reopen it and request mentor review.
 - If you can't open the PR - do another fork and create a new PR.
