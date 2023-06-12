@@ -391,6 +391,14 @@ To check if the page was deployed succesfully you need to check in the project s
 > If you need an ADDITIONAL CODE REVIEW, click on re-request button at the PR page.
 ![Image of re-request button](https://user-images.githubusercontent.com/38065883/104471439-89929200-55c3-11eb-824a-596bfb8aa246.png)
 
+## Important 
+In order to allow us to review your homework - do not close PR and do not open several PR's.
+If there is a fork and PR, then any subsequent PR for that fork will be ignored
+and it won't be synced to the platform, only the first PR made after the fork will
+
+- If you have closed the PR - reopen it and request mentor review.
+- If you can't open the PR - do another fork and create a new PR.
+
 ## Linux users
 > If you use _linux_ please make sure you adjusted writing permissions to let 
 scripts work without `sudo`. Correct permissions mean you don't see errors like
