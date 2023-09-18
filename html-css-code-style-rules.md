@@ -1,31 +1,73 @@
 1. [STYLES] - Get used to style all elements using classes. And don't increase
 selectors specificity unless completely necessary
-       <details>
-         <summary>HTML example</summary>
-           ![css-classes-html-example-2](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-html-2.png)
-       </details>
-       <details>
-         <summary>BAD CSS examples</summary>
-           ![css-classes-bad-example-4](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-bad-4.png)
-           ![css-classes-bad-example-5](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-bad-5.png)
-       </details>
-       <details>
-         <summary>GOOD CSS example</summary>
-           ![css-classes-good-example-2](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-good-2.png)
-       </details>
+    <details>
+      <summary>HTML example</summary>
+
+      ```html
+      <nav class="nav">  
+        <ul class="nav__list">  
+          ...  
+        <ul>  
+      </nav>  
+      ```
+    </details>
+    <details>
+      <summary>BAD CSS examples</summary>
+
+      ```css
+      ul {
+        list-style: none
+      }
+      ```
+
+      ```css
+      nav ul {
+        list-style: none
+      }
+      ```
+    </details>
+    <details>
+      <summary>GOOD CSS example</summary>
+
+      ```css
+      .nav__list {
+        list-style: none
+      }
+      ```
+    </details>
 
 
 2. [CODE STYLE] - Don't use simple tag names or specific styles in class names.
 Exception - specific semantic tags, like `header`, `nav`, `footer` etc. Try to
 describe the content of the tag.
-       <details>
-         <summary>BAD example</summary>
-           ![html-class-names-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-class-names/example-bad-1.png)
-       </details>
-       <details>
-         <summary>GOOD example</summary>
-           ![html-class-names-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-class-names/example-good-1.png)
-       </details>
+    <details>
+      <summary>BAD example</summary>
+
+      ```html
+      <nav class="no-padding">
+        <ul>
+          ...
+          <li class="li">
+            <a href="#apple" class="a-last-no-decoration">Apple</a>
+          </li>
+        </ul>
+      </nav>
+      ```
+    </details>
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <nav class="nav">
+        <ul class="nav__list">
+          ...
+          <li class="nav__item">
+            <a href="#apple" class="nav__link">Apple</a>
+          </li>
+        </ul>
+      </nav>
+      ```
+    </details>
 
 
 3. [STYLES] - Remember to use fallback fonts - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
@@ -39,14 +81,32 @@ horizontal scroll. But do not break the line if it cannot be broken (ex., long l
 5. [CODE STYLE] - Remember about correct indentation between parent and child
 elements. Each level of nesting, including text, contained inside the element,
 requires 2-space offset. Also blank line shouldn't be between parent and child elements.
-       <details>
-         <summary>BAD examples</summary>
-           ![html-indentations-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-indentations/example-bad-1.png)
-       </details>
-       <details>
-         <summary>GOOD example</summary>
-           ![html-indentations-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-indentations/example-good-1.png)
-       </details>
+    <details>
+      <summary>BAD examples</summary>
+
+      ```html
+      <body>
+      <div>
+      <p>
+      Awesome text
+      </p>
+      </div>
+      </body>
+      ```
+    </details>
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <body>
+        <div>
+          <p>
+            Awesome text
+          </p>
+        </div>
+      </body>
+      ```
+      </details>
 
 
 6. [CODE STYLE] - Don't use spaces in links. Have you seen any link with literal
@@ -73,16 +133,42 @@ zone on 100% of header height
 attributes is more than 2 - start each one, including the first, on the new
 line with 2-space indentation related to tag. Tag’s closing bracket should be
 on the same level as opening one.
-        <details>
-          <summary>BAD examples</summary>
-            ![html-attributes-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-1.png)
-            ![html-attributes-bad-example-2](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-2.png)
-            ![html-attributes-bad-example-3](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-3.png)
-            ![html-attributes-bad-example-4](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-4.png)
-        </details>
-        <details>
-          <summary>GOOD example</summary>
-            ![html-attributes-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-good-1.png)
-        </details>
+    <details>
+      <summary>BAD examples</summary>
+      
+      ```html
+      <input type="text" name="surname" 
+             id="surname" required>
+
+      <input type="text" 
+             name="surname" 
+             id="surname"
+             required>
+
+      <input
+      type="text" 
+      name="surname" 
+      id="surname"
+      required>
+
+      <input
+        type="text" 
+        name="surname" 
+        id="surname"
+        required>
+      ```
+    </details>
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <input
+        type="text" 
+        name="surname" 
+        id="surname"
+        required
+      >
+      ```
+    </details>
 
 
