@@ -419,4 +419,4 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 - [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
 - [Working with figma](./figma.md)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
-- [Code Style Rules](code-style-rules.md)
+- [HTML, CSS Code Style Rules](html-css-code-style-rules.md)
