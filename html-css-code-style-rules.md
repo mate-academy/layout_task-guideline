@@ -1,4 +1,7 @@
-1. [STYLES] - Get used to style all elements using classes. And don't increase
+1. [STYLE] - Don't set fixed container size. Let the content size dictate it.
+
+
+2. [STYLES] - Get used to style all elements using classes. And don't increase
 selectors specificity unless completely necessary
     <details>
       <summary>HTML example</summary>
@@ -37,7 +40,7 @@ selectors specificity unless completely necessary
     </details>
 
 
-2. [CODE STYLE] - Don't use simple tag names or specific styles in class names.
+3. [CODE STYLE] - Don't use simple tag names or specific styles in class names.
 Exception - specific semantic tags, like `header`, `nav`, `footer` etc. Try to
 describe the content of the tag.
     <details>
@@ -70,15 +73,15 @@ describe the content of the tag.
     </details>
 
 
-3. [STYLES] - Remember to use fallback fonts - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+4. [STYLES] - Remember to use fallback fonts - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
 
 
-4. [CODE STYLE] - Keep your code line length below 80. It’s not only historical
+5. [CODE STYLE] - Keep your code line length below 80. It’s not only historical
 tradition, but also allows your code to fit into one standard screen without
 horizontal scroll. But do not break the line if it cannot be broken (ex., long links).
 
 
-5. [CODE STYLE] - Remember about correct indentation between parent and child
+6. [CODE STYLE] - Remember about correct indentation between parent and child
 elements. Each level of nesting, including text, contained inside the element,
 requires 2-space offset. Also blank line shouldn't be between parent and child elements.
     <details>
@@ -109,11 +112,11 @@ requires 2-space offset. Also blank line shouldn't be between parent and child e
       </details>
 
 
-6. [CODE STYLE] - Don't use spaces in links. Have you seen any link with literal
+7. [CODE STYLE] - Don't use spaces in links. Have you seen any link with literal
 space in it on the Internet? Remember, anchor links start with `#`.
 
 
-7. [CODE STYLE] - Make sure you have `alt` attribute for images, they must be
+8. [CODE STYLE] - Make sure you have `alt` attribute for images, they must be
 present
 ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/)
 and
@@ -121,15 +124,15 @@ and
 
 
 
-8. [CODE KNOWLEDGE] - Don't use `*` selector for zeroing out your margins or paddings. It's still inefficient for browser to read your web document
+9. [CODE KNOWLEDGE] - Don't use `*` selector for zeroing out your margins or paddings. It's still inefficient for browser to read your web document
 
 
 
-9. [STYLES] - Remember that links should have `cursor: pointer` and clickable
+10. [STYLES] - Remember that links should have `cursor: pointer` and clickable
 zone on 100% of header height
 
 
-10. [CODE STYLE] - If the HTML-element has long attribute values or number of
+11. [CODE STYLE] - If the HTML-element has long attribute values or number of
 attributes is more than 2 - start each one, including the first, on the new
 line with 2-space indentation related to tag. Tag’s closing bracket should be
 on the same level as opening one.
@@ -172,7 +175,7 @@ on the same level as opening one.
     </details>
 
 
-11. [CODE STYLE] - Add empty lines between multiline sibling blocks of HTML.
+12. [CODE STYLE] - Add empty lines between multiline sibling blocks of HTML.
 But don't add empty lines between parent and child elements
     <details>
       <summary>BAD example</summary>
@@ -215,7 +218,7 @@ But don't add empty lines between parent and child elements
     </details>
 
 
-12. [CODE STYLE] - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
+13. [CODE STYLE] - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
     <details>
       <summary>BAD example</summary>
 
@@ -241,11 +244,7 @@ But don't add empty lines between parent and child elements
       .block--1,
       .block--2,
       .block--3 {
-      background-color: yellowgreen;
+        background-color: yellowgreen;
       }
       ```
     </details>
-
-
-13. [STYLE] - Don't set fixed container size. Let the content size dictate it.
-14. [TESTS] - Don't add vertical margin between rows of stars.
