@@ -172,3 +172,82 @@ on the same level as opening one.
     </details>
 
 
+11. [CODE STYLE] - Add empty lines between multiline sibling blocks of HTML.
+But don't add empty lines between parent and child elements
+
+    <details>
+      <summary>BAD example</summary>
+
+      ```html
+      <ul>
+
+        <li class="nav__item">
+          <a href="#home">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#shop">Shop</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts">Contacts</a>
+        </li>
+
+      </ul>
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <ul>
+        <li class="nav__item">
+          <a href="#home">Home</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#shop">Shop</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      ```
+    </details>
+
+
+12. [CODE STYLE] - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
+
+    <details>
+      <summary>BAD example</summary>
+
+      ```css
+      .block--1 {
+        background-color: yellowgreen;
+      }
+
+      .block--2 {
+        background-color: yellowgreen;
+      }
+
+      .block--3 {
+        background-color: yellowgreen;
+      }
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```css
+      .block--1,
+      .block--2,
+      .block--3 {
+      background-color: yellowgreen;
+      }
+      ```
+    </details>
+
+
+3. [STYLE] - Don't set fixed container size. Let the content size dictate it.
+4. [TESTS] - Don't add vertical margin between rows of stars.
