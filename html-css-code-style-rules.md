@@ -1,5 +1,15 @@
-1. [STYLE] - Don't set fixed container size. Let the content size dictate it.
+# Code Style Best Practices
 
+- [HTML](#HTML) 
+- [CSS](#CSS) 
+
+## HTML
+Put HTML related rules here
+
+## CSS
+Put CSS related rules here
+
+1. [STYLE] - Don't set fixed container size. Let the content size dictate it.
 
 2. [STYLES] - Get used to style all elements using classes. And don't increase
 selectors specificity unless completely necessary
