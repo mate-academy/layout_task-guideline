@@ -174,7 +174,6 @@ on the same level as opening one.
 
 11. [CODE STYLE] - Add empty lines between multiline sibling blocks of HTML.
 But don't add empty lines between parent and child elements
-
     <details>
       <summary>BAD example</summary>
 
@@ -217,7 +216,6 @@ But don't add empty lines between parent and child elements
 
 
 12. [CODE STYLE] - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
-
     <details>
       <summary>BAD example</summary>
 
@@ -249,5 +247,5 @@ But don't add empty lines between parent and child elements
     </details>
 
 
-3. [STYLE] - Don't set fixed container size. Let the content size dictate it.
-4. [TESTS] - Don't add vertical margin between rows of stars.
+13. [STYLE] - Don't set fixed container size. Let the content size dictate it.
+14. [TESTS] - Don't add vertical margin between rows of stars.
