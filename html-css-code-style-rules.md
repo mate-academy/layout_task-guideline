@@ -2,7 +2,6 @@
 
 [HTML](#HTML) 
 [CSS](#CSS) 
-
 ---
 
 ## HTML
