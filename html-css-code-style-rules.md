@@ -169,6 +169,87 @@
       ```
     </details>
 
+### BEM
+  - You should create separate file for each BEM block
+  - Check your BEM structure using BEM-linter (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
+  - Don't add external styles (positioning or margins) to BEM-blocks.
+  Use mix where necessary and move all external styles under element selector.
+    
+    <details>
+      <summary>BAD example</summary>
+
+      ```html
+      <!--index.html-->
+      <div class="container">
+        <div class="card">
+          ...
+        </div>
+      </div>
+      ```
+
+      ```css
+      /*styles.css*/
+      .card {
+        margin: 48px 24px;
+        font-size: 16px;
+        background-color: purple;
+      }
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <!--index.html-->
+      <div class="container">
+        <div class="container__card card">
+          ...
+        </div>
+      </div>
+      ```
+
+      ```css
+      /*styles.css*/
+      .container__card {
+        margin: 48px 24px;
+      }
+
+      .card {
+        font-size: 16px;
+        background-color: purple;
+      }
+      ```
+    </details>
+
+### SEO
+  - Use semantic tags like header, nav, main, footer, section, article, h2, p ...
+  - `alt` atribute should describe the image if the image contains information (better description you have - better for you :))
+
+    <details>
+      <summary>REALLY BAD example</summary>
+
+      ```html
+      <img alt="image" />
+      ```
+    </details>
+
+    <details>
+      <summary>STILL BAD example</summary>
+
+      ```html
+      <img alt="phone" />
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
+      ```
+    </details>
+
 ---
 
 ## CSS
@@ -258,3 +339,11 @@
       }
       ```
     </details>
+
+### Border on hover
+  - Don't add new border to the element on hover. 
+  Add default transparent border of the same width, and change its color on `:hover`
+
+### Consistent margins and paddings
+  - Be consistent with your margins.
+  Add only top or bottom, don't add both.
