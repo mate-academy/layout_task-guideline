@@ -170,7 +170,9 @@
     </details>
 
 ### BEM
-  - You should create separate file for each BEM block
+  - Create a separate file per each BEM block styles that have the same name as the block
+  - Make sure to follow BEM naming convention for complex modifiers: 
+  `block-name--modifier-name--modifier-value`
   - Check your BEM structure using BEM-linter (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
   - Don't add external styles (positioning or margins) to BEM-blocks.
   Use mix where necessary and move all external styles under element selector.
@@ -253,6 +255,84 @@
 ---
 
 ## CSS
+
+
+### SASS
+  - Check your import syntax. It's differs from plain CSS.
+  - Use variables for the main values so that you'll be able to reuse them,
+  and give them descriptive names.
+  But don't overuse them, don't create variable for the value that's used just once.
+  - Don't use SASS loops for styles that stay the same for all elements
+  of the group, e.g. `display` or `position`.
+  - Make use of SASS nesting - write pseudo-class, pseudo-element
+  selectors inside general selector. As well as media queries.
+
+    <details>
+      <summary>BAD example</summary>
+
+      ```scss
+      &__buy-link {
+        display: flex;
+        margin-top: 20px;
+      }
+
+      &__buy-link:hover {
+        color: blue;
+      }
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```scss
+      &__buy-link {
+        display: flex;
+        margin-top: 20px;
+
+        &:hover {
+          color: blue;
+        }
+      }
+      ```
+    </details>
+
+## Transition
+  - Make sure to list all styles that you apply transition to.
+  - Make sure to add transition style under general selector, not the
+  one with `:hover` - this way transition will work smoothly both ways.
+
+    <details>
+      <summary>BAD example</summary>
+
+      ```scss
+      .box {
+        color: gray;
+
+        &:hover {
+          color: aquamarine;
+          transform: scale(1.2);
+          transition: 0.5s;
+        }
+      }
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```scss
+      .box {
+        color: gray;
+        transition: color 0.5s, transform 0.5s;
+
+        &:hover {
+          color: aquamarine;
+          transform: scale(1.2);
+        }
+      }
+      ```
+    </details>
 
 ### Fixed size
   - Don't set fixed container size. Let the content size dictate it.
