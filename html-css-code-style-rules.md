@@ -83,7 +83,7 @@
   - Make sure you have `alt` attribute for images, they must be
   present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
 
-### Attributes formatting
+### Attributes
   - If the HTML-element has long attribute values or number of
   attributes is more than 2 - start each one, including the first, on the new
   line with 2-space indentation related to tag. Tag’s closing bracket should be
@@ -121,6 +121,35 @@
         type="text" 
         name="surname" 
         id="surname"
+        required
+      >
+      ```
+    </details>
+
+  - Use camelCase for values of name attribute - they should be  valid as JavaScript object keys. 
+  It should not contain spaces, or other special characters.
+
+    <details>
+      <summary>BAD example</summary>
+
+      ```html
+      <input
+        type="date" 
+        name="date of birth" 
+        id="dateOfBirth"
+        required
+      >
+      ```
+    </details>
+
+     <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <input
+        type="date" 
+        name="dateOfBirth" 
+        id="dateOfBirth"
         required
       >
       ```
@@ -373,6 +402,93 @@
       ```css
       .nav__list {
         list-style: none
+      }
+      ```
+    </details>
+    
+  - If you have two or more similar elements with portions of similar styles with different values - use one
+  of the elements as the basic case, and override necessary styles for other cases.
+  Explanation: The point is not in the names of the classes, the point is: when there are several similar elements, ex., 2 inputs, for one we can give a class input, for example, and for the second - input input--small. We write all the styles for .input, but for .input-small we write only those styles that differ in design, and we need this second input to look a little different.
+  Element with class .input without extra classes should also look like a full-fledged styled element.
+
+    <details>
+      <summary>BAD example</summary>
+
+      ```html
+      <!--index.html-->
+
+      <img 
+        class="icon-big"
+        src="url(./logo.png)"
+        alt="Company logo"
+      >
+
+      <img
+        class="icon-small"
+        src="url(./logo-small.png)"
+        alt="Company small logo"
+      >
+      ```
+
+      ```css
+      /*styles.css*/
+
+      .icon-big {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+
+      .icon-small {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        display: block;
+        width: 32px;
+        height: 32px;
+      }
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <!--index.html-->
+
+      <img 
+        class="icon" 
+        src="url(./logo.png)" 
+        alt="Company logo"
+      >
+
+      <img 
+        class="icon icon--small"
+        src="url(./logo-small.png)" 
+        alt="Company small logo"
+      >
+      ```
+
+      ```css
+      /*styles.css*/
+
+     .icon {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+
+      .icon--small {
+        top: 16px;
+        left: 16px;
+        width: 32px;
+        height: 32px;
       }
       ```
     </details>
