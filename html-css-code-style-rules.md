@@ -203,6 +203,43 @@
   - Make sure to follow BEM naming convention for complex modifiers: 
   `block-name--modifier-name--modifier-value`
   - Check your BEM structure using BEM-linter (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
+  - Make sure to follow BEM naming convention
+    
+    <details>
+      <summary>BAD example</summary>
+
+      ```html
+      <div class="product__rating">
+        <div class="product__stars stars--4">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+      </div>
+      ```
+    </details>
+
+    <details>
+      <summary>GOOD example</summary>
+
+      ```html
+      <div class="product__rating">
+        <div class="product__stars stars stars--4">
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+        </div>
+      </div>
+
+      `stars--4` is a modifier of the `stars` block, but `stars` block does not exist in HTML;
+      `star` is another block, stars should be the elements of the `stars` block
+      ```
+    </details>
+
   - Don't add external styles (positioning or margins) to BEM-blocks.
   Use mix where necessary and move all external styles under element selector.
     
@@ -293,6 +330,7 @@
   But don't overuse them, don't create variable for the value that's used just once.
   - Don't use SASS loops for styles that stay the same for all elements
   of the group, e.g. `display` or `position`.
+  - Try to use different features - mixins etc - where it makes sense.
   - Make use of SASS nesting - write pseudo-class, pseudo-element
   selectors inside general selector. As well as media queries.
 
