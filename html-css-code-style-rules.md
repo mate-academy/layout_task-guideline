@@ -7,10 +7,9 @@
 ## HTML
 
 <details>
-  <summary>Correct class naming</summary>
+  <summary>Don't use simple tag names or specific styles in class names</summary>
 
-  - Don't use simple tag names or specific styles in class names.  
-  Exception - specific semantic tags, like `header`, `nav`, `footer` etc.
+  - Exception - specific semantic tags, like `header`, `nav`, `footer` etc.
   Try to describe the content of the tag.
 
   BAD example
@@ -39,19 +38,17 @@
 </details>
 
 <details>
-  <summary>Line length</summary>
+  <summary>Keep your code line length below 80</summary>
 
-  -  Keep your code line length below 80.
-  It’s not only historical tradition, but also allows your code to fit into one standard screen,
-  without horizontal scroll. But do not break the line if it cannot be broken (ex., long links).
+  - It’s not only historical tradition, but also allows your code to fit into one standard screen, without horizontal scroll. 
+  But do not break the line if it cannot be broken (ex., long links).
 </details>
 
 <details>
-  <summary>Indentation</summary>
+  <summary>Remember about correct indentation between parent and child elements</summary>
 
-  - Remember about correct indentation between parent and child elements. 
-  Each level of nesting, including text, contained inside the element,
-  requires 2-space offset. Also blank line shouldn't be between parent and child elements.
+  - Each level of nesting, including text, contained inside the element, requires 2-space offset. 
+  Also blank line shouldn't be between parent and child elements.
 
   BAD example
   ```html
@@ -77,26 +74,24 @@
 </details>
 
 <details>
-  <summary>Link</summary>
+  <summary>Don't use spaces in links</summary>
 
-  - Don't use spaces in links. Have you seen any link with literal space in it on the Internet?
+  - Have you seen any link with literal space in it on the Internet?
   Remember, anchor links start with `#`
 </details>
 
 <details>
-  <summary>Alternative image text</summary>
+  <summary>Make sure you have `alt` attribute for images</summary>
 
-  -  Make sure you have `alt` attribute for images, they must be
-  present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
+  - They must be present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
 </details>
 
 <details>
-  <summary>Attributes</summary>
+  <summary>Keep your attributes correctly formatted</summary>
 
-  - If the HTML-element has long attribute values or number of
-  attributes is more than 2 - start each one, including the first, on the new
-  line with 2-space indentation related to tag. Tag’s closing bracket should be
-  on the same level as opening one.
+  - If the HTML-element has long attribute values or number of attributes is more than 2 - start each one,
+  including the first, on the new line with 2-space indentation related to tag.
+  Tag’s closing bracket should be on the same level as opening one.
 
   BAD Examples
   ```html
@@ -130,8 +125,12 @@
     required
   >
   ```
+</details>
 
-   - Use camelCase for values of name attribute - they should be  valid as JavaScript object keys. 
+<details>
+  <summary>Use camelCase for values of name attribute</summary>
+
+  - They should be valid as JavaScript object keys.
   It should not contain spaces, or other special characters.
 
   BAD Example
@@ -156,7 +155,7 @@
 </details>
 
 <details>
-  <summary>Empty lines</summary>
+  <summary>Don't forget to add empty lines</summary>
 
   - Add empty lines between multiline sibling blocks of HTML.
   But don't add empty lines between parent and child elements
@@ -281,7 +280,7 @@
 
 
 <details>
-  <summary>SEO</summary>
+  <summary>Don't forget about semantic tags, attributes, etc.</summary>
 
   - Use semantic tags like header, nav, main, footer, section, article, h2, p ...
   - `alt` atribute should describe the image if the image contains information (better description you have - better for you :))
