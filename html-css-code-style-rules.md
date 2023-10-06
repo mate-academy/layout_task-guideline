@@ -344,7 +344,7 @@
 </details>
 
 <details>
-  <summary>Transition</summary>
+  <summary>Make sure to correctly set transition properties</summary>
 
   - Make sure to list all styles that you apply transition to.
   - Make sure to add transition style under general selector, not the
@@ -377,13 +377,13 @@
 </details>
 
 <details>
-  <summary>Fixed size</summary>
+  <summary>Don't set fixed container size</summary>
 
-  - Don't set fixed container size. Let the content size dictate it.
+  - Let the content size dictate it.
 </details>
 
 <details>
-  <summary>Style using classes</summary>
+  <summary>Get used to correct styling rules</summary>
 
   - Get used to style all elements using classes. 
   - Don't increase selectors specificity unless completely necessary
@@ -500,43 +500,41 @@
 </details>
 
 <details>
-  <summary>Fallback fonts</summary>
+  <summary>Remember to use fallback fonts</summary>
 
-  - Remember to use fallback fonts - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+  - Fallback font - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
 </details>
 
 <details>
-  <summary>Styles resetting</summary>
+  <summary>Don't use * for resetting</summary>
 
-  - Don't use `*` selector for zeroing out your margins or paddings.
+  - Don't use `*` selector for zeroing out your margins, paddings or other styles.
   It's still inefficient for browser to read your web document
 </details>
 
 <details>
-  <summary>Clickable elements</summary>
+  <summary>Apply correct styles to clickable elements</summary>
 
   - Remember that all clickable elements should have `cursor: pointer`
   - Sometimes it's also good to create clickable area around element
 </details>
 
 <details>
-  <summary>Border on hover</summary>
+  <summary>Don't add new border to the element on hover</summary>
 
-  - Don't add new border to the element on hover. 
-  Add default transparent border of the same width, and change its color on `:hover`
+  - Add default transparent border of the same width, and change its color on `:hover`
 </details>
 
 <details>
-  <summary>Consistent margins and paddings</summary>
+  <summary>Be consistent with your margins.</summary>
 
-  - Be consistent with your margins.
-  Add only top or bottom, don't add both.
+  - Add only top or bottom, don't add both.
 </details>
 
 <details>
-  <summary>Simplified selectors</summary>
+  <summary>Use simplfiied selectors when it's possible</summary>
 
-  - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
+  - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out of sync in future
 
   BAD Example
   ```css
