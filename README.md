@@ -363,12 +363,14 @@ To check if the page was deployed succesfully you need to check in the project s
 - Change the `compare` branch  at the right to `develop`;
 - Click `Create pull request` button;
 - Copy `DEMO LINK` and `TEST REPORT LINK` from `readme.md` to the PR description;
+  - Links should contain your Github name (not `mate-academy`)!!!
 - Click `Create pull request` button one more time;
 - Check that your `DEMO LINK` and `TEST REPORT LINK` work as expected (open the page and test results);
 - Check if the task appeared in the table (only for full-time students)
 
 ![New pull request](./images/new-pull-request.png)
 ![Create pull request](./images/create-pull-request.png)
+![Add DEMO Links](./images/add-demo-links.png)
 
 <details>
   <summary>Check your DEMO LINK</summary>
