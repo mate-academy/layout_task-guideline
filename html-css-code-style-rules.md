@@ -81,7 +81,7 @@
 </details>
 
 <details>
-  <summary>Make sure you have `alt` attribute for images</summary>
+  <summary>Make sure to have `alt` attribute for images</summary>
 
   - They must be present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
 </details>
@@ -128,7 +128,7 @@
 </details>
 
 <details>
-  <summary>Use camelCase for values of name attribute</summary>
+  <summary>Use camelCase for values of 'name' attribute</summary>
 
   - They should be valid as JavaScript object keys.
   It should not contain spaces, or other special characters.
@@ -155,10 +155,9 @@
 </details>
 
 <details>
-  <summary>Don't forget to add empty lines</summary>
+  <summary>Add empty lines between multiline sibling blocks of HTML</summary>
 
-  - Add empty lines between multiline sibling blocks of HTML.
-  But don't add empty lines between parent and child elements
+  - But don't add them between parent and child elements
 
   BAD Example
   ```html
@@ -280,7 +279,7 @@
 
 
 <details>
-  <summary>Don't forget about semantic tags, attributes, etc.</summary>
+  <summary>Make use of semantic tags, attributes, etc.</summary>
 
   - Use semantic tags like header, nav, main, footer, section, article, h2, p ...
   - `alt` atribute should describe the image if the image contains information (better description you have - better for you :))
@@ -346,8 +345,8 @@
 <details>
   <summary>Make sure to correctly set transition properties</summary>
 
-  - Make sure to list all styles that you apply transition to.
-  - Make sure to add transition style under general selector, not the
+  - List all styles that you apply transition to.
+  - Add transition style under general selector, not the
   one with `:hover` - this way transition will work smoothly both ways.
 
   BAD Example
@@ -385,7 +384,7 @@
 <details>
   <summary>Get used to correct styling rules</summary>
 
-  - Get used to style all elements using classes. 
+  - Style all elements using classes. 
   - Don't increase selectors specificity unless completely necessary
 
   HTML Example
@@ -500,7 +499,7 @@
 </details>
 
 <details>
-  <summary>Remember to use fallback fonts</summary>
+  <summary>Use fallback fonts</summary>
 
   - Fallback font - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
 </details>
@@ -508,14 +507,14 @@
 <details>
   <summary>Don't use * for resetting</summary>
 
-  - Don't use `*` selector for zeroing out your margins, paddings or other styles.
+  - Zeroing out your margins, paddings or other styles with '*' is not the best way to do it.
   It's still inefficient for browser to read your web document
 </details>
 
 <details>
   <summary>Apply correct styles to clickable elements</summary>
 
-  - Remember that all clickable elements should have `cursor: pointer`
+  - All clickable elements should have `cursor: pointer`
   - Sometimes it's also good to create clickable area around element
 </details>
 
