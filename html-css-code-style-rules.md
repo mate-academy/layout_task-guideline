@@ -305,44 +305,6 @@
 ## CSS
 
 <details>
-  <summary>SASS</summary>
-
-  - Check your import syntax. It's differs from plain CSS.
-  - Use variables for the main values so that you'll be able to reuse them,
-  and give them descriptive names.
-  But don't overuse them, don't create variable for the value that's used just once.
-  - Don't use SASS loops for styles that stay the same for all elements
-  of the group, e.g. `display` or `position`.
-  - Try to use different features - mixins etc - where it makes sense.
-  - Make use of SASS nesting - write pseudo-class, pseudo-element
-  selectors inside general selector. As well as media queries.
-
-  BAD Example
-  ```scss
-  &__buy-link {
-    display: flex;
-    margin-top: 20px;
-  }
-
-  &__buy-link:hover {
-    color: blue;
-  }
-  ```
-
-  GOOD Example
-  ```scss
-  &__buy-link {
-    display: flex;
-    margin-top: 20px;
-
-    &:hover {
-      color: blue;
-    }
-  }
-  ```
-</details>
-
-<details>
   <summary>Make sure to correctly set transition properties</summary>
 
   - List all styles that you apply transition to.
@@ -559,3 +521,71 @@
   }
   ```
 </details>
+
+---
+
+## SASS
+
+<details>
+  <summary>Check your import syntax. It's differs from plain CSS</summary>
+
+  ```css
+  CSS
+  @import url("filename");
+  ```
+
+  ```scss
+  SCSS
+  @import "filename";
+  ```
+</details>
+
+<details>
+  <summary>Use variables for the main values</summary>
+
+  - Create variables only when value repeats more than once.
+  - Use descriptive names.
+</details>
+
+<details>
+  <summary>Don't use loops for styles that stay the same</summary>
+
+  - display and position are perfect examples for styles that stay the same.
+</details>
+
+<details>
+  <summary>Use mixins, functions, etc.</summary>
+
+  - These are powerful tools to get rid of repeatable code, but don't use them everywhere.
+</details>
+
+<details>
+  <summary>Use nesting</summary>
+
+  - Write pseudo-class, pseudo-element selectors inside general selector. As well as media queries.
+
+  BAD Example
+  ```scss
+  &__buy-link {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__buy-link:hover {
+    color: blue;
+  }
+  ```
+
+  GOOD Example
+  ```scss
+  &__buy-link {
+    display: flex;
+    margin-top: 20px;
+
+    &:hover {
+      color: blue;
+    }
+  }
+  ```
+</details>
+  
