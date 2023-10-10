@@ -36,7 +36,8 @@
 
 #### If you need to delete a forked repo
 <details>
-  <summary>Click here to see the instructions</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">Click here to see the instructions</summary>
 
   - Open project settings ![Open project settings](./images/open-project-settings.png)
   - Delete the repo ![Delete the repo](./images/delete-the-repo.png)
@@ -59,13 +60,15 @@
 ![Clone success](./images/clone-success.png)
 
 <details>
-  <summary>How to open Git Bash</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to open Git Bash</summary>
 
   ![Git Bash here](./images/git-bash-here.png)
 </details>
 
 <details>
-  <summary>How to paste the project URL to Terminal (Git Bash)</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to paste the project URL to Terminal (Git Bash)</summary>
 
   ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
 </details>
@@ -77,7 +80,8 @@
 ![The project opened correctly](./images/project-in-vscode-correct.png)
 
 <details>
-  <summary>Project is opened WRONG</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">Project is opened WRONG</summary>
 
   ![The project opened correctly](./images/project-in-vscode-wrong.png)
 </details>
@@ -88,7 +92,8 @@
 - Check if the terminal in VSCode is Git Bash (Windows) of ZSH (macOS)
 
 <details>
- <summary>Click here to see how select the default terminal in VSCode</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">Click here to see how select the default terminal in VSCode</summary>
 
  - Choose `Select default shell` option ![Select default shell](./images/select-default-shell.png)
  - Select Git Bash (Windows) or zsh (macOS) ![Default shell popup](./images/default-shell-popup.png)
@@ -102,25 +107,29 @@ And wait until it downloads all the packages and finish.
 > Note: You should run it once for every new task
 
 <details>
- <summary>If you don't have Node.js</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If you don't have Node.js</summary>
 
  ![If you don't have Node.js](./images/if-you-have-node-15.png)
 </details>
 
 <details>
- <summary>If you run `npm i` outside the project</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If you run `npm i` outside the project</summary>
 
  ![If you run npm install outside the project](./images/if-you-run-npm-i-outside-the-project.png)
 </details>
 
 <details>
- <summary>If you have Node.js 15 or later</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If you have Node.js 15 or later</summary>
 
  ![If you have Node.js 15 or later](./images/if-you-have-node-15.png)
 </details>
 
 <details>
- <summary>How to reinstall Node.js</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to reinstall Node.js</summary>
 
  - Open `Add and remove programs` ![Open Add and Remove programs](./images/open-add-remove-programs.png)
  - Uninstall Node.js ![Uninstall Node.js](./images/uninstall-node-js.png)
@@ -139,7 +148,8 @@ The command in the terminal will never finish.
 - The text should appear in the browser.
 
 <details>
- <summary>If the page is still empty after you added some text</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If the page is still empty after you added some text</summary>
 
  - Update the page by pressing `ctrl + r` (`cmd + r` for macOS)
  - If the page is still empty check if you saved the changes ![Autosave is disabled](./images/autosave-is-disabled.png)
@@ -147,7 +157,8 @@ The command in the terminal will never finish.
 </details>
 
 <details>
- <summary>If the page is opened at the other port (not :8080)</summary>
+ <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If the page is opened at the other port (not :8080)</summary>
 
  - If you see the other port ![Wrong port](./images/wrong-server-port.png)
  - It means you already have another terminal running `npm start` command (maybe it is another project)
@@ -175,7 +186,8 @@ git switch -c develop
 ```
 
 <details>
-  <summary>If you see that "develop" branch already exists</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If you see that "develop" branch already exists</summary>
 
   ![Develop already exists](./images/develop-already-exists.png)
   - run `git branch` to see all existent branches ![Show git branches](./images/show-git-branch.png)
@@ -200,7 +212,8 @@ npm run lint
 ```
 
 <details>
-  <summary>If you have some errors</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If you have some errors</summary>
 
   - Fix all the errors and run the command again
 
@@ -208,13 +221,15 @@ npm run lint
 </details>
 
 <details>
-  <summary>How to find the lines with linter errors</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to find the lines with linter errors</summary>
 
   ![The lines with errors](./images/lines-with-linter-errors.png)
 </details>
 
 <details>
-  <summary>This error means you need to fix CRLF</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">This error means you need to fix CRLF</summary>
 
   ![CRLF linter error](./images/crlf-linter-error.png)
 
@@ -225,7 +240,8 @@ npm run lint
 </details>
 
 <details>
-  <summary>How to fix autoformatting in VSCode</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to fix autoformatting in VSCode</summary>
 
   - Here is [the documentation](https://code.visualstudio.com/docs/languages/html#_formatting) 
   - Run `Alt + Shift + F` to format the document
@@ -284,7 +300,10 @@ git commit -m 'add task solution'
 ```
 
 <details>
-  <summary>fatal: unable to auto detect email address</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">
+    fatal: unable to auto detect email address
+  </summary>
 
   - it means you forgot to configure you GIT name and email
   - See the commands above the error message and run them one by one with your email and name
@@ -294,13 +313,15 @@ git commit -m 'add task solution'
 </details>
 
 <details>
-  <summary>no changes added to commit</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">no changes added to commit</summary>
 
   ![No changes added to commit](./images/no-changes-added-to-commit.png)
 </details>
 
 <details>
-  <summary>LF will be replaced with CRLF</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">LF will be replaced with CRLF</summary>
 
   - You forgot to fix CRLF 
 
@@ -314,7 +335,8 @@ git push origin develop
 ```
 
 <details>
-  <summary>failed to push some refs</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">failed to push some refs</summary>
 
   ![Forgot to create develop](./images/forgot-to-create-develop.png)
   ![Reset and create develop](./images/reset-head-and-create-develop.png)
@@ -323,7 +345,8 @@ git push origin develop
 </details>
 
 <details>
-  <summary>If you are asked for the Authorization</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">If you are asked for the Authorization</summary>
 
   ![Github auth popup](./images/github-auth-popup.png)
   ![Authorize GIT credentials manager](./images/authorize-git-credentials-manager.png)
@@ -331,7 +354,8 @@ git push origin develop
 </details>
 
 <details>
-  <summary>fatal: unable to access</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">fatal: unable to access</summary>
 
   ![Permission denied](./images/permissions-denied.png)
   ![Add correct origin](./images/add-correct-origin.png)
@@ -373,7 +397,8 @@ To check if the page was deployed succesfully you need to check in the project s
 ![Add DEMO Links](./images/add-demo-links.png)
 
 <details>
-  <summary>Check your DEMO LINK</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">Check your DEMO LINK</summary>
 
   - You forgot to put your Github name into `DEMO_LINK` and `TEST_REPORT_LINK`
 
@@ -381,7 +406,8 @@ To check if the page was deployed succesfully you need to check in the project s
 </details>
 
 <details>
-  <summary>Check your TEST REPORT LINK</summary>
+  <summary>
+    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">Check your TEST REPORT LINK</summary>
 
   - You forgot to run tests before `npm run deploy`
 
