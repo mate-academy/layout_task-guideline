@@ -8,7 +8,7 @@
 
 - to avoid permissions issues **DO NOT place your projects folder on desktop**;
 - there should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`;
-- it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/progects` on MacOS.
+- it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/projects` on MacOS.
 
 ## Before implementing the first task on Github
 
