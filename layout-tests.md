@@ -98,7 +98,7 @@ You can click on a failes test to see its details
 ![Element not found](./images/tests/element-not-found.png)
 ![Element not found](./images/tests/result-element-not-found.png)
 
-It means you did not add correct `class` or `data-` to some element (check the selector in `backstopConfig.js`)
+It means you did not add correct `class` or `data-` attribute to some element (check the task description or the selector in `backstopConfig.js`)
 
 ### If you see ERR_CONNECTION_REFUSED
 
