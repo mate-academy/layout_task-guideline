@@ -10,6 +10,9 @@
 - there should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`;
 - it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/projects` on MacOS.
 
+## If you need to debug tests
+[Open this DOC](layout-tests.md)
+
 ## Before implementing the first task on Github
 
 - Open your profile page on [the MA Platform](https://mate.academy/profile)
