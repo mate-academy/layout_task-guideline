@@ -83,6 +83,7 @@
 <details>
   <summary>Make sure to have `alt` attribute for images</summary>
 
+  - It should describe the image if the image contains information (better description you have - better for you :))
   - They must be present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
 </details>
 
@@ -195,94 +196,9 @@
 </details>
 
 <details>
-  <summary>BEM</summary>
-
-  - Create a separate file per each BEM block styles that have the same name as the block
-  - Make sure to follow BEM naming convention for complex modifiers: 
-  `block-name--modifier-name--modifier-value`
-  - Check your BEM structure using BEM-linter (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
-  - Make sure to follow BEM naming convention
-
-  BAD Example
-  ```html
-  <div class="product__rating">
-    <div class="product__stars stars--4">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-    </div>
-  </div>
-  ```
-
-  GOOD Example
-  ```html
-  <div class="product__rating">
-    <div class="product__stars stars stars--4">
-      <div class="stars__star"></div>
-      <div class="stars__star"></div>
-      <div class="stars__star"></div>
-      <div class="stars__star"></div>
-      <div class="stars__star"></div>
-    </div>
-  </div>
-
-  `stars--4` is a modifier of the `stars` block, but `stars` block does not exist in HTML;
-  `star` is another block, stars should be the elements of the `stars` block
-  ```
-
-  - Don't add external styles (positioning or margins) to BEM-blocks.
-  Use mix where necessary and move all external styles under element selector.
-
-  BAD Example
-  ```html
-  <!--index.html-->
-  <div class="container">
-    <div class="card">
-      ...
-    </div>
-  </div>
-  ```
-
-  ```css
-  /*styles.css*/
-  .card {
-    margin: 48px 24px;
-    font-size: 16px;
-    background-color: purple;
-  }
-  ```
-
-  GOOD Example
-  ```html
-  <!--index.html-->
-  <div class="container">
-    <div class="container__card card">
-      ...
-    </div>
-  </div>
-  ```
-
-  ```css
-  /*styles.css*/
-  .container__card {
-    margin: 48px 24px;
-  }
-
-  .card {
-    font-size: 16px;
-    background-color: purple;
-  }
-  ```
-</details>
-
-
-<details>
   <summary>Make use of semantic tags, attributes, etc.</summary>
 
-  - Use semantic tags like header, nav, main, footer, section, article, h2, p ...
-  - `alt` atribute should describe the image if the image contains information (better description you have - better for you :))
+  - Use tags like header, nav, main, footer, section, article, h2, p ...
 
   REALLY BAD example
   ```html
@@ -588,4 +504,105 @@
   }
   ```
 </details>
-  
+
+---
+
+## BEM
+
+<details>
+  <summary>Follow naming convention</summary>
+
+  BAD Example
+  ```html
+  <div class="product__rating">
+    <div class="product__stars stars--4">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+  </div>
+  ```
+
+  GOOD Example
+  ```html
+  <div class="product__rating">
+    <div class="product__stars stars stars--4">
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+    </div>
+  </div>
+
+  `stars--4` is a modifier of the `stars` block, but `stars` block does not exist in HTML;
+  `star` is another block, stars should be the elements of the `stars` block
+  ```
+</details>
+
+<details>
+  <summary>Follow naming convention for complex modifiers</summary>
+
+  - `block-name--modifier-name--modifier-value`
+</details>
+
+<details>
+  <summary>Check your structure using linter</summary>
+
+  - (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
+</details>
+
+<details>
+  <summary>Create a separate file per each styles block</summary>
+
+  - If styles block has the same name as BEM block - create separate file for it
+</details>
+
+<details>
+  <summary>Don't add external styles (positioning or margins) to blocks</summary>
+
+  - Use mix where necessary and move all external styles under element selector.
+
+  BAD Example
+  ```html
+  <!--index.html-->
+  <div class="container">
+    <div class="card">
+      ...
+    </div>
+  </div>
+  ```
+
+  ```css
+  /*styles.css*/
+  .card {
+    margin: 48px 24px;
+    font-size: 16px;
+    background-color: purple;
+  }
+  ```
+
+  GOOD Example
+  ```html
+  <!--index.html-->
+  <div class="container">
+    <div class="container__card card">
+      ...
+    </div>
+  </div>
+  ```
+
+  ```css
+  /*styles.css*/
+  .container__card {
+    margin: 48px 24px;
+  }
+
+  .card {
+    font-size: 16px;
+    background-color: purple;
+  }
+  ```
+</details>
