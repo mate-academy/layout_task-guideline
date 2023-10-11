@@ -1,19 +1,12 @@
 # How to solve the layout tasks on Github
+This doc explains everuthing you need to solve Github Layout tasks and send then for review
 
-> Learn [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
-
-> Learn [Terminal commands](https://mate-academy.github.io/fe-program/tools/terminal/useful-commands)
-
-## !!!!!!!!! MUST READ !!!!!!!
-
-- to avoid permissions issues **DO NOT place your projects folder on desktop**;
-- there should be **NO SPACES in the path**. e.g. `C:\Users\Your Name\projects`;
+- ❗ to avoid permissions issues **DO NOT** place your projects folder on the `Desktop`;
+- ❗ there should be **NO SPACES** in the path e.g. `C:\Users\Your Name\projects`;
 - it is better to put repositories into `D:\projects` or `C:\Users\YourName\projects` on Windows, or `/Users/YourName/projects` on MacOS.
 
-## If you need to debug tests
-[Open this DOC](layout-tests.md)
-
 ## Before implementing the first task on Github
+Connect Github to you Mate account
 
 - Open your profile page on [the MA Platform](https://mate.academy/profile)
 - Scroll down and press `Connect` button next to Github
@@ -22,22 +15,24 @@
 ## Follow these instructions for all HTML/CSS tasks on Github:
 
 ### 1. Open the task on the MA platform
-- click `Make a fork` button
-- it will open the task repo page on Github
+Click `Make a fork` button. It will open the task repo page on Github.
 
 ### 2. **Fork** the repo
+Click the `Fork` button on Github
+
 ![How to fork the repo](./images/fork-the-repo.png)
 
 ### 3. You should see your name in the URL instead of "mate-academy"
+After the Fork process is finished you should see the repo in your account (not the `mate-academy`)
 ![After the repo fork](./images/after-the-repo-fork.png)
 
-#### To check if the MA Platform sees the forked repo
+Now you can check if it was synced to the MA platform
 - Go back to the task on the MA platform
-- Reload the page
 - The button should change to `Open the task`
+- If no, reload the page
 - Get back to the forked repo on Github
 
-#### If you need to delete a forked repo
+#### If later you will need to delete a forked repo
 <details>
   <summary>
     <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">Click here to see the instructions</summary>
@@ -47,37 +42,42 @@
 </details>
 
 ### 4. **Clone** the forked repo
+Now you need to clone the forked project to you computer. Follow the next steps (and see screenshots below):
+
 - click the green `Code` button;
 - select `HTTPS` tab;
 - ensure that link contains your Github name (NOT `mate-academy`)
 - copy the link;
-- open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder;
+- open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder (You installed it in Git and Termianl course);
+  <details>
+    <summary>
+      <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">
+      How to open Git Bash
+    </summary>
+
+    ![Git Bash here](./images/git-bash-here.png)
+  </details>
+
 - run `pwd` in the terminal to check that you are in the `projects` folder;
   - if not, navigate to it using the `cd` command with a required path;
 - clone the repo by running `git clone` command with the URL you copied on Github
-    ```
-    git clone the-link-from-github
-    ```
+  ```shell
+  git clone the-link-from-github
+  ```
+    
+  <details>
+    <summary>
+      <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to paste the project URL to Terminal (Git Bash)</summary>
+  
+    ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
+  </details>
     
 ![Clone the repo](./images/clone-the-repo.png)
 ![Clone success](./images/clone-success.png)
 
-<details>
-  <summary>
-    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to open Git Bash</summary>
-
-  ![Git Bash here](./images/git-bash-here.png)
-</details>
-
-<details>
-  <summary>
-    <img alt="hint" src="https://placehold.co/80x24/ffedeb/e25544?text=< Expand">How to paste the project URL to Terminal (Git Bash)</summary>
-
-  ![How to paste the URL into terminal](./images/paste-url-to-terminal.png)
-</details>
-
 ### 5. Open the project in IDE
-- run `code layout_hello-world` in the terminal;
+Now you need to open the project in you code editor (`VSCode`)
+- run `code project-name` in the terminal (for example `code layout_hello-world`);
 - you will see the project name as a root folder name in VSCode;
 
 ![The project opened correctly](./images/project-in-vscode-correct.png)
@@ -255,16 +255,14 @@ npm run lint
 
 ### 14. Check if your solution matches all the expectations
 - read the `checklist.md`;
-- fix your code;
+- fix your code if needed;
+- run `npm run lint` again to ensure nothing is broken
 - run the tests;
     ```
     npm test
     ```
 - Test results should be openned in browser;
 - If not, check if you fixed all the code style errors (`npm run lint`)
-
-> If you can't run tests for some weird reason just use a screenshot from
-  `backstop_data/bitmaps_reference/Entire_document.png` to ensure your page looks as expected.
 
 #### If you see a failing test
 
@@ -273,15 +271,11 @@ Fix you HTML and CSS to make your page identical to the expected result.
 ![Failed tests](./images/failed-tests.png)
 ![How to compare a test with reference](./images/how-to-compare-test-with-reference.png)
 
+#### If you need to debug tests
+- [Open this DOC](layout-tests.md)
 
-#### If you see ERR_CONNECTION_REFUSED
-
-![Connection refused error](./images/connection-refused-error.png)
-
-- check if you have another terminal tab running `npm start` command;
-- Open new terminal tab and run `npm start`;
-- Check if the page is opened at `http://localhost:8080/`;
-- Run `npm test` again to see the results.
+> If you can't run tests for some weird reason just use a screenshot from
+  `backstop_data/bitmaps_reference/Entire_document.png` to ensure your page looks as expected.
 
 ### 15. Prepare your changed files for saving
 ```
@@ -445,9 +439,11 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 - `npm run deploy` publishes the page and test report to `gh-pages` 
 
 ## Useful links
+
+- [Open this DOC](layout-tests.md)
+- [Working with figma](./figma.md)
+- [HTML, CSS Code Style Rules](html-css-code-style-rules.md)
 - [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
 - [Terminal commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
-- [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
-- [Working with figma](./figma.md)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
-- [HTML, CSS Code Style Rules](html-css-code-style-rules.md)
+- [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
