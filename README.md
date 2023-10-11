@@ -440,7 +440,7 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 
 ## Useful links
 
-- [Open this DOC](layout-tests.md)
+- [How to understand and debug Layout Tests](layout-tests.md)
 - [Working with figma](./figma.md)
 - [HTML, CSS Code Style Rules](html-css-code-style-rules.md)
 - [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
