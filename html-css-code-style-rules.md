@@ -6,540 +6,603 @@
 
 ## HTML
 
-### Correct class naming
-  - Don't use simple tag names or specific styles in class names.
-  Exception - specific semantic tags, like `header`, `nav`, `footer` etc.
+<details>
+  <summary>Don't use simple tag names or specific styles in class names</summary>
+
+  - Exception - specific semantic tags, like `header`, `nav`, `footer` etc.
   Try to describe the content of the tag.
-    <details>
-      <summary>BAD example</summary>
 
-      ```html
-      <nav class="no-padding">
-        <ul>
-          ...
-          <li class="li">
-            <a href="#apple" class="a-last-no-decoration">Apple</a>
-          </li>
-        </ul>
-      </nav>
-      ```
-    </details>
-    <details>
-      <summary>GOOD example</summary>
+  BAD example
+  ```html
+  <nav class="no-padding">
+    <ul>
+      ...
+      <li class="li">
+        <a href="#apple" class="a-last-no-decoration">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
 
-      ```html
-      <nav class="nav">
-        <ul class="nav__list">
-          ...
-          <li class="nav__item">
-            <a href="#apple" class="nav__link">Apple</a>
-          </li>
-        </ul>
-      </nav>
-      ```
-    </details>
+  GOOD example
+  ```html
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+      <li class="nav__item">
+        <a href="#apple" class="nav__link">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+</details>
 
-### Line length
-  - Keep your code line length below 80.
-  It’s not only historical tradition, but also allows your code to fit into one standard screen,
-  without horizontal scroll. But do not break the line if it cannot be broken (ex., long links).
+<details>
+  <summary>Keep your code line length below 80</summary>
 
-### Indentation
-  - Remember about correct indentation between parent and child elements.
-  Each level of nesting, including text, contained inside the element,
-  requires 2-space offset. Also blank line shouldn't be between parent and child elements.
-    <details>
-      <summary>BAD examples</summary>
+  - It’s not only historical tradition, but also allows your code to fit into one standard screen, without horizontal scroll. 
+  But do not break the line if it cannot be broken (ex., long links).
+</details>
 
-      ```html
-      <body>
-      <div>
+<details>
+  <summary>Remember about correct indentation between parent and child elements</summary>
+
+  - Each level of nesting, including text, contained inside the element, requires 2-space offset. 
+  Also blank line shouldn't be between parent and child elements.
+
+  BAD example
+  ```html
+  <body>
+  <div>
+  <p>
+  Awesome text
+  </p>
+  </div>
+  </body>
+  ```
+  
+  GOOD example
+  ```html
+  <body>
+    <div>
       <p>
-      Awesome text
+        Awesome text
       </p>
-      </div>
-      </body>
-      ```
-    </details>
-    <details>
-      <summary>GOOD example</summary>
+    </div>
+  </body>
+  ```
+</details>
 
-      ```html
-      <body>
-        <div>
-          <p>
-            Awesome text
-          </p>
-        </div>
-      </body>
-      ```
-      </details>
+<details>
+  <summary>Don't use spaces in links</summary>
 
-### Link
-  - Don't use spaces in links. Have you seen any link with literal
-  space in it on the Internet? Remember, anchor links start with `#`
+  - Have you seen any link with literal space in it on the Internet?
+  Remember, anchor links start with `#`
+</details>
 
-### Alternative image text
-  - Make sure you have `alt` attribute for images, they must be
-  present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
+<details>
+  <summary>Make sure to have `alt` attribute for images</summary>
 
-### Attributes
-  - If the HTML-element has long attribute values or number of
-  attributes is more than 2 - start each one, including the first, on the new
-  line with 2-space indentation related to tag. Tag’s closing bracket should be
-  on the same level as opening one.
-    <details>
-      <summary>BAD examples</summary>
-      
-      ```html
-      <input type="text" name="surname" 
-             id="surname" required>
+  - It should describe the image if the image contains information (better description you have - better for you :))
+  - They must be present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
+</details>
 
-      <input type="text" 
-             name="surname" 
-             id="surname"
-             required>
+<details>
+  <summary>Keep your attributes correctly formatted</summary>
 
-      <input
-      type="text" 
-      name="surname" 
-      id="surname"
-      required>
+  - If the HTML-element has long attribute values or number of attributes is more than 2 - start each one,
+  including the first, on the new line with 2-space indentation related to tag.
+  Tag’s closing bracket should be on the same level as opening one.
 
-      <input
-        type="text" 
-        name="surname" 
-        id="surname"
-        required>
-      ```
-    </details>
-    <details>
-      <summary>GOOD example</summary>
+  BAD Examples
+  ```html
+  <input type="text" name="surname" 
+         id="surname" required>
 
-      ```html
-      <input
-        type="text" 
-        name="surname" 
-        id="surname"
-        required
-      >
-      ```
-    </details>
+  <input type="text" 
+         name="surname" 
+         id="surname"
+         required>
 
-  - Use camelCase for values of name attribute - they should be  valid as JavaScript object keys. 
+  <input
+  type="text" 
+  name="surname" 
+  id="surname"
+  required>
+
+  <input
+    type="text" 
+    name="surname" 
+    id="surname"
+    required>
+  ```
+
+  GOOD Example
+  ```html
+  <input
+    type="text" 
+    name="surname" 
+    id="surname"
+    required
+  >
+  ```
+</details>
+
+<details>
+  <summary>Use camelCase for values of 'name' attribute</summary>
+
+  - They should be valid as JavaScript object keys.
   It should not contain spaces, or other special characters.
 
-    <details>
-      <summary>BAD example</summary>
+  BAD Example
+  ```html
+  <input
+    type="date" 
+    name="date of birth" 
+    id="dateOfBirth"
+    required
+  >
+  ```
 
-      ```html
-      <input
-        type="date" 
-        name="date of birth" 
-        id="dateOfBirth"
-        required
-      >
-      ```
-    </details>
+  GOOD Example
+ ```html
+  <input
+    type="date" 
+    name="dateOfBirth" 
+    id="dateOfBirth"
+    required
+  >
+  ```
+</details>
 
-     <details>
-      <summary>GOOD example</summary>
+<details>
+  <summary>Add empty lines between multiline sibling blocks of HTML</summary>
 
-      ```html
-      <input
-        type="date" 
-        name="dateOfBirth" 
-        id="dateOfBirth"
-        required
-      >
-      ```
-    </details>
+  - But don't add them between parent and child elements
 
-### Empty lines
-  - Add empty lines between multiline sibling blocks of HTML.
-  But don't add empty lines between parent and child elements
-    <details>
-      <summary>BAD example</summary>
+  BAD Example
+  ```html
+  <ul>
 
-      ```html
-      <ul>
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
 
-        <li class="nav__item">
-          <a href="#home">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="#shop">Shop</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contacts">Contacts</a>
-        </li>
+  </ul>
+  ```
 
-      </ul>
-      ```
-    </details>
+  GOOD Example
+  ```html
+  <ul>
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
 
-    <details>
-      <summary>GOOD example</summary>
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
 
-      ```html
-      <ul>
-        <li class="nav__item">
-          <a href="#home">Home</a>
-        </li>
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
+  </ul>
+  ```
+</details>
 
-        <li class="nav__item">
-          <a href="#shop">Shop</a>
-        </li>
+<details>
+  <summary>Make use of semantic tags, attributes, etc.</summary>
 
-        <li class="nav__item">
-          <a href="#contacts">Contacts</a>
-        </li>
-      </ul>
-      ```
-    </details>
+  - Use tags like header, nav, main, footer, section, article, h2, p ...
 
-### BEM
-  - Create a separate file per each BEM block styles that have the same name as the block
-  - Make sure to follow BEM naming convention for complex modifiers: 
-  `block-name--modifier-name--modifier-value`
-  - Check your BEM structure using BEM-linter (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
-  - Don't add external styles (positioning or margins) to BEM-blocks.
-  Use mix where necessary and move all external styles under element selector.
-    
-    <details>
-      <summary>BAD example</summary>
+  REALLY BAD example
+  ```html
+  <img alt="image" />
+  ```
 
-      ```html
-      <!--index.html-->
-      <div class="container">
-        <div class="card">
-          ...
-        </div>
-      </div>
-      ```
+  STILL BAD example
+  ```html
+  <img alt="phone" />
+  ```
 
-      ```css
-      /*styles.css*/
-      .card {
-        margin: 48px 24px;
-        font-size: 16px;
-        background-color: purple;
-      }
-      ```
-    </details>
-
-    <details>
-      <summary>GOOD example</summary>
-
-      ```html
-      <!--index.html-->
-      <div class="container">
-        <div class="container__card card">
-          ...
-        </div>
-      </div>
-      ```
-
-      ```css
-      /*styles.css*/
-      .container__card {
-        margin: 48px 24px;
-      }
-
-      .card {
-        font-size: 16px;
-        background-color: purple;
-      }
-      ```
-    </details>
-
-### SEO
-  - Use semantic tags like header, nav, main, footer, section, article, h2, p ...
-  - `alt` atribute should describe the image if the image contains information (better description you have - better for you :))
-
-    <details>
-      <summary>REALLY BAD example</summary>
-
-      ```html
-      <img alt="image" />
-      ```
-    </details>
-
-    <details>
-      <summary>STILL BAD example</summary>
-
-      ```html
-      <img alt="phone" />
-      ```
-    </details>
-
-    <details>
-      <summary>GOOD example</summary>
-
-      ```html
-      <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
-      ```
-    </details>
+  GOOD example<
+  ```html
+  <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
+  ```
+</details>
 
 ---
 
 ## CSS
 
+<details>
+  <summary>Make sure to correctly set transition properties</summary>
 
-### SASS
-  - Check your import syntax. It's differs from plain CSS.
-  - Use variables for the main values so that you'll be able to reuse them,
-  and give them descriptive names.
-  But don't overuse them, don't create variable for the value that's used just once.
-  - Don't use SASS loops for styles that stay the same for all elements
-  of the group, e.g. `display` or `position`.
-  - Make use of SASS nesting - write pseudo-class, pseudo-element
-  selectors inside general selector. As well as media queries.
-
-    <details>
-      <summary>BAD example</summary>
-
-      ```scss
-      &__buy-link {
-        display: flex;
-        margin-top: 20px;
-      }
-
-      &__buy-link:hover {
-        color: blue;
-      }
-      ```
-    </details>
-
-    <details>
-      <summary>GOOD example</summary>
-
-      ```scss
-      &__buy-link {
-        display: flex;
-        margin-top: 20px;
-
-        &:hover {
-          color: blue;
-        }
-      }
-      ```
-    </details>
-
-## Transition
-  - Make sure to list all styles that you apply transition to.
-  - Make sure to add transition style under general selector, not the
+  - List all styles that you apply transition to.
+  - Add transition style under general selector, not the
   one with `:hover` - this way transition will work smoothly both ways.
 
-    <details>
-      <summary>BAD example</summary>
+  BAD Example
+  ```scss
+  .box {
+    color: gray;
 
-      ```scss
-      .box {
-        color: gray;
+    &:hover {
+      color: aquamarine;
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
+  ```
+  GOOD Example
+  ```scss
+  .box {
+    color: gray;
+    transition: color 0.5s, transform 0.5s;
 
-        &:hover {
-          color: aquamarine;
-          transform: scale(1.2);
-          transition: 0.5s;
-        }
-      }
-      ```
-    </details>
+    &:hover {
+      color: aquamarine;
+      transform: scale(1.2);
+    }
+  }
+  ```
+</details>
 
-    <details>
-      <summary>GOOD example</summary>
+<details>
+  <summary>Don't set fixed container size</summary>
 
-      ```scss
-      .box {
-        color: gray;
-        transition: color 0.5s, transform 0.5s;
+  - Let the content size dictate it.
+</details>
 
-        &:hover {
-          color: aquamarine;
-          transform: scale(1.2);
-        }
-      }
-      ```
-    </details>
+<details>
+  <summary>Get used to correct styling rules</summary>
 
-### Fixed size
-  - Don't set fixed container size. Let the content size dictate it.
-
-### Style using classes
-  - Get used to style all elements using classes. 
+  - Style all elements using classes. 
   - Don't increase selectors specificity unless completely necessary
 
-    <details>
-      <summary>HTML example</summary>
+  HTML Example
+  ```html
+  <nav class="nav">  
+    <ul class="nav__list">  
+      ...  
+    <ul>  
+  </nav>  
+  ```
 
-      ```html
-      <nav class="nav">  
-        <ul class="nav__list">  
-          ...  
-        <ul>  
-      </nav>  
-      ```
-    </details>
-    <details>
-      <summary>BAD CSS examples</summary>
+  BAD CSS Examples
+  ```css
+  ul {
+    list-style: none
+  }
+  ```
 
-      ```css
-      ul {
-        list-style: none
-      }
-      ```
+  ```css
+  nav ul {
+    list-style: none
+  }
+  ```
 
-      ```css
-      nav ul {
-        list-style: none
-      }
-      ```
-    </details>
-    <details>
-      <summary>GOOD CSS example</summary>
+  GOOD CSS Example
+  ```css
+  .nav__list {
+    list-style: none
+  }
+  ```
 
-      ```css
-      .nav__list {
-        list-style: none
-      }
-      ```
-    </details>
-    
   - If you have two or more similar elements with portions of similar styles with different values - use one
   of the elements as the basic case, and override necessary styles for other cases.
   Explanation: The point is not in the names of the classes, the point is: when there are several similar elements, ex., 2 inputs, for one we can give a class input, for example, and for the second - input input--small. We write all the styles for .input, but for .input-small we write only those styles that differ in design, and we need this second input to look a little different.
   Element with class .input without extra classes should also look like a full-fledged styled element.
 
-    <details>
-      <summary>BAD example</summary>
+  BAD Example
+  ```html
+  <!--index.html-->
 
-      ```html
-      <!--index.html-->
+  <img 
+    class="icon-big"
+    src="url(./logo.png)"
+    alt="Company logo"
+  >
 
-      <img 
-        class="icon-big"
-        src="url(./logo.png)"
-        alt="Company logo"
-      >
+  <img
+    class="icon-small"
+    src="url(./logo-small.png)"
+    alt="Company small logo"
+  >
+  ```
 
-      <img
-        class="icon-small"
-        src="url(./logo-small.png)"
-        alt="Company small logo"
-      >
-      ```
+  ```css
+  /*styles.css*/
 
-      ```css
-      /*styles.css*/
+  .icon-big {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
 
-      .icon-big {
-        position: absolute;
-        top: 24px;
-        left: 24px;
-        display: block;
-        width: 40px;
-        height: 40px;
-      }
+  .icon-small {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+  ```
 
-      .icon-small {
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        display: block;
-        width: 32px;
-        height: 32px;
-      }
-      ```
-    </details>
+  GOOD Example
+  ```html
+  <!--index.html-->
 
-    <details>
-      <summary>GOOD example</summary>
+  <img 
+    class="icon" 
+    src="url(./logo.png)" 
+    alt="Company logo"
+  >
 
-      ```html
-      <!--index.html-->
+  <img 
+    class="icon icon--small"
+    src="url(./logo-small.png)" 
+    alt="Company small logo"
+  >
+  ```
 
-      <img 
-        class="icon" 
-        src="url(./logo.png)" 
-        alt="Company logo"
-      >
+  ```css
+  /*styles.css*/
 
-      <img 
-        class="icon icon--small"
-        src="url(./logo-small.png)" 
-        alt="Company small logo"
-      >
-      ```
+  .icon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
 
-      ```css
-      /*styles.css*/
+  .icon--small {
+    top: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+  }
+  ```
+</details>
 
-     .icon {
-        position: absolute;
-        top: 24px;
-        left: 24px;
-        display: block;
-        width: 40px;
-        height: 40px;
-      }
+<details>
+  <summary>Use fallback fonts</summary>
 
-      .icon--small {
-        top: 16px;
-        left: 16px;
-        width: 32px;
-        height: 32px;
-      }
-      ```
-    </details>
+  - Fallback font - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+</details>
 
-### Fallback fonts
-  - Remember to use fallback fonts - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+<details>
+  <summary>Don't use * for resetting</summary>
 
-### Styles resetting
-  - Don't use `*` selector for zeroing out your margins or paddings.
+  - Zeroing out your margins, paddings or other styles with '*' is not the best way to do it.
   It's still inefficient for browser to read your web document
+</details>
 
-### Clickable elements
-  - Remember that all clickable elements should have `cursor: pointer`
+<details>
+  <summary>Apply correct styles to clickable elements</summary>
+
+  - All clickable elements should have `cursor: pointer`
   - Sometimes it's also good to create clickable area around element
+</details>
 
-### Simplified selectors
-  - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
-    <details>
-      <summary>BAD example</summary>
+<details>
+  <summary>Don't add new border to the element on hover</summary>
 
-      ```css
-      .block--1 {
-        background-color: yellowgreen;
-      }
+  - Add default transparent border of the same width, and change its color on `:hover`
+</details>
 
-      .block--2 {
-        background-color: yellowgreen;
-      }
+<details>
+  <summary>Be consistent with your margins.</summary>
 
-      .block--3 {
-        background-color: yellowgreen;
-      }
-      ```
-    </details>
+  - Add only top or bottom, don't add both.
+</details>
 
-    <details>
-      <summary>GOOD example</summary>
+<details>
+  <summary>Use simplfiied selectors when it's possible</summary>
 
-      ```css
-      .block--1,
-      .block--2,
-      .block--3 {
-        background-color: yellowgreen;
-      }
-      ```
-    </details>
+  - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out of sync in future
 
-### Border on hover
-  - Don't add new border to the element on hover. 
-  Add default transparent border of the same width, and change its color on `:hover`
+  BAD Example
+  ```css
+  .block--1 {
+    background-color: yellowgreen;
+  }
 
-### Consistent margins and paddings
-  - Be consistent with your margins.
-  Add only top or bottom, don't add both.
+  .block--2 {
+    background-color: yellowgreen;
+  }
+
+  .block--3 {
+    background-color: yellowgreen;
+  }
+  ```
+
+  GOOD Example
+  ```css
+  .block--1,
+  .block--2,
+  .block--3 {
+    background-color: yellowgreen;
+  }
+  ```
+</details>
+
+---
+
+## SASS
+
+<details>
+  <summary>Check your import syntax. It's differs from plain CSS</summary>
+
+  ```css
+  CSS
+  @import url("filename");
+  ```
+
+  ```scss
+  SCSS
+  @import "filename";
+  ```
+</details>
+
+<details>
+  <summary>Use variables for the main values</summary>
+
+  - Create variables only when value repeats more than once.
+  - Use descriptive names.
+</details>
+
+<details>
+  <summary>Don't use loops for styles that stay the same</summary>
+
+  - display and position are perfect examples for styles that stay the same.
+</details>
+
+<details>
+  <summary>Use mixins, functions, etc.</summary>
+
+  - These are powerful tools to get rid of repeatable code, but don't use them everywhere.
+</details>
+
+<details>
+  <summary>Use nesting</summary>
+
+  - Write pseudo-class, pseudo-element selectors inside general selector. As well as media queries.
+
+  BAD Example
+  ```scss
+  &__buy-link {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__buy-link:hover {
+    color: blue;
+  }
+  ```
+
+  GOOD Example
+  ```scss
+  &__buy-link {
+    display: flex;
+    margin-top: 20px;
+
+    &:hover {
+      color: blue;
+    }
+  }
+  ```
+</details>
+
+---
+
+## BEM
+
+<details>
+  <summary>Follow naming convention</summary>
+
+  BAD Example
+  ```html
+  <div class="product__rating">
+    <div class="product__stars stars--4">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+  </div>
+  ```
+
+  GOOD Example
+  ```html
+  <div class="product__rating">
+    <div class="product__stars stars stars--4">
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+    </div>
+  </div>
+
+  `stars--4` is a modifier of the `stars` block, but `stars` block does not exist in HTML;
+  `star` is another block, stars should be the elements of the `stars` block
+  ```
+</details>
+
+<details>
+  <summary>Follow naming convention for complex modifiers</summary>
+
+  - `block-name--modifier-name--modifier-value`
+</details>
+
+<details>
+  <summary>Check your structure using linter</summary>
+
+  - (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
+</details>
+
+<details>
+  <summary>Create a separate file per each styles block</summary>
+
+  - If styles block has the same name as BEM block - create separate file for it
+</details>
+
+<details>
+  <summary>Don't add external styles (positioning or margins) to blocks</summary>
+
+  - Use mix where necessary and move all external styles under element selector.
+
+  BAD Example
+  ```html
+  <!--index.html-->
+  <div class="container">
+    <div class="card">
+      ...
+    </div>
+  </div>
+  ```
+
+  ```css
+  /*styles.css*/
+  .card {
+    margin: 48px 24px;
+    font-size: 16px;
+    background-color: purple;
+  }
+  ```
+
+  GOOD Example
+  ```html
+  <!--index.html-->
+  <div class="container">
+    <div class="container__card card">
+      ...
+    </div>
+  </div>
+  ```
+
+  ```css
+  /*styles.css*/
+  .container__card {
+    margin: 48px 24px;
+  }
+
+  .card {
+    font-size: 16px;
+    background-color: purple;
+  }
+  ```
+</details>
