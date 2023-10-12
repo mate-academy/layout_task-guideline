@@ -295,12 +295,6 @@
 </details>
 
 <details>
-  <summary>Check your structure using linter</summary>
-
-  - (`npm run lint`) and [this list](https://mate-academy.github.io/fe-program/css/typical-bem-mistakes-en)
-</details>
-
-<details>
   <summary>Create a separate file per each styles block</summary>
 
   - If styles block has the same name as BEM block - create separate file for it
