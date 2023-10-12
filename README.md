@@ -444,6 +444,6 @@ scripts work without `sudo`. Correct permissions mean you don't see errors like
 - [Working with figma](./figma.md)
 - [HTML, CSS Code Style Rules](html-css-code-style-rules.md)
 - [Useful GIT commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
-- [Terminal commands](https://mate-academy.github.io/fe-program/tools/git/useful-commands)
+- [Terminal commands](https://mate-academy.github.io/fe-program/tools/terminal/useful-commands)
 - [Creating a pull request from a fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
 - [HTML, CSS styleguide](https://mate-academy.github.io/style-guides/htmlcss.html)
