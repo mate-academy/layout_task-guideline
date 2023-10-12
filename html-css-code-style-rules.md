@@ -1,54 +1,28 @@
 # Code Style Best Practices
 
-[HTML](#HTML) 
-[CSS](#CSS) 
----
-
-## HTML
-
+## HTML Formatting
 <details>
-  <summary>Don't use simple tag names or specific styles in class names</summary>
+  <summary>Use <b>2 spaces</b> for indentation in your file (not a <code>tab</code> character)</summary>
 
-  - Exception - specific semantic tags, like `header`, `nav`, `footer` etc.
-  Try to describe the content of the tag.
-
-  BAD example
-  ```html
-  <nav class="no-padding">
-    <ul>
-      ...
-      <li class="li">
-        <a href="#apple" class="a-last-no-decoration">Apple</a>
-      </li>
-    </ul>
-  </nav>
-  ```
-
-  GOOD example
-  ```html
-  <nav class="nav">
-    <ul class="nav__list">
-      ...
-      <li class="nav__item">
-        <a href="#apple" class="nav__link">Apple</a>
-      </li>
-    </ul>
-  </nav>
-  ```
-</details>
-
-<details>
-  <summary>Keep your code line length below 80</summary>
-
-  - It’s not only historical tradition, but also allows your code to fit into one standard screen, without horizontal scroll. 
-  But do not break the line if it cannot be broken (ex., long links).
+  > to make sure your formatting will look the same everiwhere
 </details>
 
 <details>
   <summary>Remember about correct indentation between parent and child elements</summary>
 
-  - Each level of nesting, including text, contained inside the element, requires 2-space offset. 
+  > Each level of nesting, including text, contained inside the element, requires 2-space offset. 
   Also blank line shouldn't be between parent and child elements.
+
+  GOOD example
+  ```html
+  <body>
+    <div>
+      <p>
+        Awesome text
+      </p>
+    </div>
+  </body>
+  ```
 
   BAD example
   ```html
@@ -60,39 +34,64 @@
   </div>
   </body>
   ```
-  
-  GOOD example
+</details>
+
+<details>
+  <summary>Add empty lines between multiline sibling blocks of HTML</summary>
+
+  > To add some "air" and simplify reading. But don't add them between parent and child elements.
+
+  GOOD Example
   ```html
-  <body>
-    <div>
-      <p>
-        Awesome text
-      </p>
-    </div>
-  </body>
+  <ul>
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
+  </ul>
   ```
-</details>
 
-<details>
-  <summary>Don't use spaces in links</summary>
+  BAD Example
+  ```html
+  <ul>
 
-  - Have you seen any link with literal space in it on the Internet?
-  Remember, anchor links start with `#`
-</details>
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
 
-<details>
-  <summary>Make sure to have `alt` attribute for images</summary>
-
-  - It should describe the image if the image contains information (better description you have - better for you :))
-  - They must be present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) and [even more](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
+  </ul>
+  ```
 </details>
 
 <details>
   <summary>Keep your attributes correctly formatted</summary>
 
-  - If the HTML-element has long attribute values or number of attributes is more than 2 - start each one,
+  > If the HTML-element has long attribute values or number of attributes is more than 2 - start each one,
   including the first, on the new line with 2-space indentation related to tag.
   Tag’s closing bracket should be on the same level as opening one.
+
+  GOOD Example
+  ```html
+  <input
+    type="text" 
+    name="surname" 
+    id="surname"
+    required
+  >
+  ```
 
   BAD Examples
   ```html
@@ -116,89 +115,30 @@
     id="surname"
     required>
   ```
-
-  GOOD Example
-  ```html
-  <input
-    type="text" 
-    name="surname" 
-    id="surname"
-    required
-  >
-  ```
 </details>
 
 <details>
-  <summary>Use camelCase for values of 'name' attribute</summary>
+  <summary>Lines of code have <code>80</code> chars max</summary>
+  
+  > It is just easier to read such lines
+</details>
 
-  - They should be valid as JavaScript object keys.
-  It should not contain spaces, or other special characters.
+## HTML Content
 
-  BAD Example
-  ```html
-  <input
-    type="date" 
-    name="date of birth" 
-    id="dateOfBirth"
-    required
-  >
-  ```
+<details>
+  <summary>Use semantic tags where possible</summary>
 
-  GOOD Example
- ```html
-  <input
-    type="date" 
-    name="dateOfBirth" 
-    id="dateOfBirth"
-    required
-  >
-  ```
+  > Like `header`, `section`, `article`, `p`. It improves your page SEO and helps screen readers. `div` and `span` does not have any meaning
 </details>
 
 <details>
-  <summary>Add empty lines between multiline sibling blocks of HTML</summary>
+  <summary> <code>alt</code> attribute should describe the image content</summary>
 
-  - But don't add them between parent and child elements
 
-  BAD Example
+  GOOD example
   ```html
-  <ul>
-
-    <li class="nav__item">
-      <a href="#home">Home</a>
-    </li>
-    <li class="nav__item">
-      <a href="#shop">Shop</a>
-    </li>
-    <li class="nav__item">
-      <a href="#contacts">Contacts</a>
-    </li>
-
-  </ul>
+  <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
   ```
-
-  GOOD Example
-  ```html
-  <ul>
-    <li class="nav__item">
-      <a href="#home">Home</a>
-    </li>
-
-    <li class="nav__item">
-      <a href="#shop">Shop</a>
-    </li>
-
-    <li class="nav__item">
-      <a href="#contacts">Contacts</a>
-    </li>
-  </ul>
-  ```
-</details>
-
-<details>
-  <summary>Make use of semantic tags, attributes, etc.</summary>
-
-  - Use tags like header, nav, main, footer, section, article, h2, p ...
 
   REALLY BAD example
   ```html
@@ -209,61 +149,54 @@
   ```html
   <img alt="phone" />
   ```
+</details>
 
-  GOOD example<
+<details>
+  <summary>Class names represent the meaning of the content (not the styles or tag names)</summary>
+
+  GOOD example
   ```html
-  <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+      <li class="nav__item">
+        <a href="#apple" class="nav__link">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+
+  BAD example
+  ```html
+  <nav class="no-padding">
+    <ul>
+      ...
+      <li class="li">
+        <a href="#apple" class="a-last-no-decoration">Apple</a>
+      </li>
+    </ul>
+  </nav>
   ```
 </details>
 
----
+<details>
+  <summary>Don't use spaces in links</summary>
+
+  > Have you seen any link with literal space in it on the Internet? Remember, anchor links start with `#`
+</details>
 
 ## CSS
-
 <details>
-  <summary>Make sure to correctly set transition properties</summary>
+  <summary>Don't use <code>*</code> selector (it impacts performance)</summary>
 
-  - List all styles that you apply transition to.
-  - Add transition style under general selector, not the
-  one with `:hover` - this way transition will work smoothly both ways.
-
-  BAD Example
-  ```scss
-  .box {
-    color: gray;
-
-    &:hover {
-      color: aquamarine;
-      transform: scale(1.2);
-      transition: 0.5s;
-    }
-  }
-  ```
-  GOOD Example
-  ```scss
-  .box {
-    color: gray;
-    transition: color 0.5s, transform 0.5s;
-
-    &:hover {
-      color: aquamarine;
-      transform: scale(1.2);
-    }
-  }
-  ```
+  > Set styles only for elements that require them.
+  > Zeroing out your margins, paddings or other styles with '*' is still inefficient for browser.
 </details>
 
 <details>
-  <summary>Don't set fixed container size</summary>
+  <summary>Don't use tag names for styling (except <code>html</code> and <code>body</code>)</summary>
 
-  - Let the content size dictate it.
-</details>
-
-<details>
-  <summary>Get used to correct styling rules</summary>
-
-  - Style all elements using classes. 
-  - Don't increase selectors specificity unless completely necessary
+  > Style all elements using `.classes` and if needed with `:pseudo-classes`, `pseudo-elements` and `[attributes]`
 
   HTML Example
   ```html
@@ -274,19 +207,6 @@
   </nav>  
   ```
 
-  BAD CSS Examples
-  ```css
-  ul {
-    list-style: none
-  }
-  ```
-
-  ```css
-  nav ul {
-    list-style: none
-  }
-  ```
-
   GOOD CSS Example
   ```css
   .nav__list {
@@ -294,218 +214,44 @@
   }
   ```
 
-  - If you have two or more similar elements with portions of similar styles with different values - use one
-  of the elements as the basic case, and override necessary styles for other cases.
-  Explanation: The point is not in the names of the classes, the point is: when there are several similar elements, ex., 2 inputs, for one we can give a class input, for example, and for the second - input input--small. We write all the styles for .input, but for .input-small we write only those styles that differ in design, and we need this second input to look a little different.
-  Element with class .input without extra classes should also look like a full-fledged styled element.
-
-  BAD Example
-  ```html
-  <!--index.html-->
-
-  <img 
-    class="icon-big"
-    src="url(./logo.png)"
-    alt="Company logo"
-  >
-
-  <img
-    class="icon-small"
-    src="url(./logo-small.png)"
-    alt="Company small logo"
-  >
-  ```
-
+  BAD CSS Examples
   ```css
-  /*styles.css*/
-
-  .icon-big {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    display: block;
-    width: 40px;
-    height: 40px;
+  ul {
+    list-style: none
   }
 
-  .icon-small {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    display: block;
-    width: 32px;
-    height: 32px;
-  }
-  ```
-
-  GOOD Example
-  ```html
-  <!--index.html-->
-
-  <img 
-    class="icon" 
-    src="url(./logo.png)" 
-    alt="Company logo"
-  >
-
-  <img 
-    class="icon icon--small"
-    src="url(./logo-small.png)" 
-    alt="Company small logo"
-  >
-  ```
-
-  ```css
-  /*styles.css*/
-
-  .icon {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    display: block;
-    width: 40px;
-    height: 40px;
-  }
-
-  .icon--small {
-    top: 16px;
-    left: 16px;
-    width: 32px;
-    height: 32px;
+  nav ul {
+    list-style: none
   }
   ```
 </details>
 
 <details>
-  <summary>Use fallback fonts</summary>
-
-  - Fallback font - alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+  <summary>Remember to use fallback fonts - alternative font-family in case the main one doesn't work</summary>
+  
+  > [Explanation](https://www.w3schools.com/cssref/pr_font_font-family.asp)
 </details>
 
 <details>
-  <summary>Don't use * for resetting</summary>
+  <summary>Be consistent with your margins (Add only top or bottom, but not both)</summary>
 
-  - Zeroing out your margins, paddings or other styles with '*' is not the best way to do it.
-  It's still inefficient for browser to read your web document
+  > To avoid potential margin collapse
 </details>
 
 <details>
-  <summary>Apply correct styles to clickable elements</summary>
+  <summary>Don't fix container size (if there is no such a requirement)</summary>
 
-  - All clickable elements should have `cursor: pointer`
-  - Sometimes it's also good to create clickable area around element
+  > Let the content size dictate it. To avoid overflow or accidental scroll bar
 </details>
 
 <details>
-  <summary>Don't add new border to the element on hover</summary>
+  <summary>
+    Hightlight clickable element with <code>cursor: pointer</code> and some <code>:hover</code> styles
+  </summary>
 
-  - Add default transparent border of the same width, and change its color on `:hover`
+  > It improves UX, and help users understand the page better
 </details>
 
-<details>
-  <summary>Be consistent with your margins.</summary>
-
-  - Add only top or bottom, don't add both.
-</details>
-
-<details>
-  <summary>Use simplfiied selectors when it's possible</summary>
-
-  - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out of sync in future
-
-  BAD Example
-  ```css
-  .block--1 {
-    background-color: yellowgreen;
-  }
-
-  .block--2 {
-    background-color: yellowgreen;
-  }
-
-  .block--3 {
-    background-color: yellowgreen;
-  }
-  ```
-
-  GOOD Example
-  ```css
-  .block--1,
-  .block--2,
-  .block--3 {
-    background-color: yellowgreen;
-  }
-  ```
-</details>
-
----
-
-## SASS
-
-<details>
-  <summary>Check your import syntax. It's differs from plain CSS</summary>
-
-  ```css
-  CSS
-  @import url("filename");
-  ```
-
-  ```scss
-  SCSS
-  @import "filename";
-  ```
-</details>
-
-<details>
-  <summary>Use variables for the main values</summary>
-
-  - Create variables only when value repeats more than once.
-  - Use descriptive names.
-</details>
-
-<details>
-  <summary>Don't use loops for styles that stay the same</summary>
-
-  - display and position are perfect examples for styles that stay the same.
-</details>
-
-<details>
-  <summary>Use mixins, functions, etc.</summary>
-
-  - These are powerful tools to get rid of repeatable code, but don't use them everywhere.
-</details>
-
-<details>
-  <summary>Use nesting</summary>
-
-  - Write pseudo-class, pseudo-element selectors inside general selector. As well as media queries.
-
-  BAD Example
-  ```scss
-  &__buy-link {
-    display: flex;
-    margin-top: 20px;
-  }
-
-  &__buy-link:hover {
-    color: blue;
-  }
-  ```
-
-  GOOD Example
-  ```scss
-  &__buy-link {
-    display: flex;
-    margin-top: 20px;
-
-    &:hover {
-      color: blue;
-    }
-  }
-  ```
-</details>
-
----
 
 ## BEM
 
@@ -603,6 +349,71 @@
   .card {
     font-size: 16px;
     background-color: purple;
+  }
+  ```
+</details>
+
+## SASS
+
+<details>
+  <summary>Check your import syntax. It's differs from plain CSS</summary>
+
+  ```css
+  /* CSS */
+  @import url("filename.css");
+  ```
+
+  ```scss
+  /* SCSS */
+  @import "filename";
+  ```
+</details>
+
+<details>
+  <summary>Use variables for the main values</summary>
+
+  - Create variables only when value repeats more than once.
+  - Use descriptive names.
+</details>
+
+<details>
+  <summary>Don't use loops for styles that stay the same</summary>
+
+  - display and position are perfect examples for styles that stay the same.
+</details>
+
+<details>
+  <summary>Use mixins, functions, etc.</summary>
+
+  - These are powerful tools to get rid of repeatable code, but don't use them everywhere.
+</details>
+
+<details>
+  <summary>Use nesting</summary>
+
+  - Write pseudo-class, pseudo-element selectors inside general selector. As well as media queries.
+
+  GOOD Example
+  ```scss
+  &__buy-link {
+    display: flex;
+    margin-top: 20px;
+
+    &:hover {
+      color: blue;
+    }
+  }
+  ```
+
+  BAD Example
+  ```scss
+  &__buy-link {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__buy-link:hover {
+    color: blue;
   }
   ```
 </details>
