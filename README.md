@@ -14,6 +14,31 @@ Connect Github to you Mate account
 
 ## Follow these instructions for all HTML/CSS tasks on Github:
 
+1. [Open the task on the MA platform](#1-open-the-task-on-the-ma-platform)
+2. [Fork the repo](#2-fork-the-repo)
+3. [Check your forked repo URL](#3-you-should-see-your-name-in-the-url-instead-of-mate-academy)
+    - [Instructions to delete a forked repo](#if-later-you-will-need-to-delete-a-forked-repo)
+4. [Clone the forked repo](#4-clone-the-forked-repo)
+5. [Open the project in IDE](#5-open-the-project-in-ide)
+6. [Open the Terminal in your IDE](#6-open-the-terminal-in-your-ide)
+7. [Run npm install](#7-run-npm-install-or-just-npm-i)
+8. [Check the project's initial state](#8-run-npm-start-to-check-if-it-works)
+9. [Open another terminal](#9-open-one-more-terminal-for-the-next-steps)
+10. [Create the develop branch](#10-create-the-develop-branch)
+11. [Update demo and test report links](#11-update-demo-link-and-test-report-link)
+12. [Implement the task described](#12-implement-the-task-described-in-the-readmemd)
+13. [Check the code style](#13-check-the-code-style)
+    - [Handling a failing test](#if-you-see-a-failing-test)
+    - [Debugging tests](#if-you-need-to-debug-tests)
+14. [Validate solution against expectations](#14-check-if-your-solution-matches-all-the-expectations)
+15. [Prepare your changed files for saving](#15-prepare-your-changed-files-for-saving)
+16. [Save your changes](#16-save-your-changes)
+17. [Send your code to Github](#17-send-your-code-to-github)
+18. [Publish your site to GitHub pages](#18-publish-your-site-to-github-pages)
+19. [Create a Pull Request (PR)](#19-create-a-pull-request-pr)
+20. [Update your PR](#20-to-update-you-pr-repeat-steps-13-18-no-need-to-create-the-pr-one-more-time)
+
+
 ### 1. Open the task on the MA platform
 Click `Make a fork` button. It will open the task repo page on Github.
 
