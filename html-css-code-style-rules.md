@@ -1,6 +1,5 @@
-# Code Style Best Practices
+### HTML Formatting
 
-## HTML Formatting
 <details>
   <summary>Use <b>2 spaces</b> for indentation in your file (not a <code>tab</code> character)</summary>
 
@@ -123,7 +122,7 @@
   > It is just easier to read such lines
 </details>
 
-## HTML Content
+### HTML Content
 
 <details>
   <summary>Use semantic tags where possible</summary>
@@ -185,7 +184,7 @@
   > Have you seen any link with literal space in it on the Internet? Remember, anchor links start with `#`
 </details>
 
-## CSS
+### CSS
 <details>
   <summary>Don't use <code>*</code> selector (it impacts performance)</summary>
 
@@ -252,8 +251,7 @@
   > It improves UX, and help users understand the page better
 </details>
 
-
-## BEM
+### BEM
 
 <details>
   <summary>Create a separate file per each styles block</summary>
@@ -273,7 +271,7 @@
   ```
 </details>
 
-## SASS
+### SASS
 
 <details>
   <summary>Check your import syntax. It's differs from plain CSS</summary>
@@ -338,9 +336,7 @@
   ```
 </details>
 
-## Typical BEM Mistakes
-
-### In HTML
+### Typical BEM Mistakes in HTML
 
 <details>
   <summary>An Element of Another Element</summary>
@@ -524,7 +520,7 @@
 ```
 </details>
 
-### In CSS
+### Typical BEM Mistakes in CSS
 
 <details>
   <summary>Styling an Element in the Context of Another Element</summary>
