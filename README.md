@@ -14,26 +14,29 @@ Connect GitHub to your Mate account.
 
 ## Follow These Instructions for All HTML/CSS Tasks on GitHub:
 
-1. [Open the task on the MA platform](open-the-task-on-the-ma-platform).
-2. [Fork the repo](#2-fork-the-repo).
-3. [Check your forked repo URL](#3-you-should-see-your-name-in-the-url-instead-of-mate-academy).
-4. [Clone the forked repo](#4-clone-the-forked-repo).
-5. [Open the project in IDE](#5-open-the-project-in-ide).
-6. [Open the Terminal in your IDE](#6-open-the-terminal-in-your-ide).
-7. [Run `npm i`](#7-run-npm-install-or-just-npm-i).
-8. [Run `npm start` to open the page in a browser](#8-run-npm-start-to-check-if-it-works).
-9. [Open another terminal](#9-open-one-more-terminal-for-the-next-steps).
-10. [Create the `develop` branch](#10-create-the-develop-branch).
-11. [Update DEMO and TEST REPORT links](#11-update-demo-link-and-test-report-link).
-12. [Implement the task](#12-implement-the-task-described-in-the-readmemd).
-13. [Run `npm run lint` to check the code style](#13-check-the-code-style).
-14. [Run `npm t` to pass tests](#14-check-if-your-solution-matches-all-the-expectations).
-15. [Run `git add ./src` to prepare your code for saving](#15-prepare-your-changed-files-for-saving).
-16. [Run `git commit -m 'add solution'` to save changes](#16-save-your-changes).
-17. [Run `git push` to send your code to GitHub](#17-send-your-code-to-github).
-18. [Run `npm run deploy` to publish your site to GitHub Pages](#18-publish-your-site-to-github-pages).
-19. [Create a Pull Request (PR) with a correct description](#19-create-a-pull-request-pr).
-20. [If you need to update your PR](#20-to-update-your-pr-repeat-steps-13-18-no-need-to-create-the-pr-one-more-time).
+1. [Open the task on the MA platform](#open-the-task-on-the-ma-platform)
+2. [Fork the repo](#fork-the-repo)
+3. [Check your forked repo URL](#check-the-url-of-the-forked-repo)
+4. [Clone the forked repo](#clone-the-forked-repo)
+5. [Open the project in IDE](#open-the-project-in-vscode)
+6. [Open the Terminal in your IDE](#open-the-terminal)
+7. [Run `npm i`](#codenpm-installcode-or-just-codenpm-icode)
+8. [Run `npm start` to open the page in a browser](#codenpm-startcode-to-open-the-page)
+9. [Open another terminal](#open-one-more-terminal-for-the-next-steps)
+10. [Create the `develop` branch](#create-the-codedevelopcode-branch)
+11. [Update DEMO and TEST REPORT links](#codenpm-testcode-to-check-if-solution-is-correct)
+12. [Implement the task](#codenpm-testcode-to-check-if-solution-is-correct)
+13. [Run `npm run lint` to check the code style](#codenpm-testcode-to-check-if-solution-is-correct)
+14. [Run `npm t` to pass tests](#codenpm-testcode-to-check-if-solution-is-correct)
+15. [Run `git add ./src` to prepare your code for saving](#codegit-addcode-to-prepare-changed-files-for-saving)
+16. [Run `git commit -m 'add solution'` to save changes](#codegit-commitcode-to-save-changes)
+17. [Run `git push` to send your code to GitHub](#codegit-pushcode-to-send-your-code-to-github)
+18. [Run `npm run deploy` to publish your site to GitHub Pages](#codenpm-run-deploycode-to-publish-to-github-pages)
+19. [Create a Pull Request (PR) with a correct description](#create-a-pull-request-pr)
+20. [If you need to update your PR](#to-update-your-pr-repeat-steps-13-18-no-need-to-create-the-pr-one-more-time)
+
+- [NPM Commands](#npm-commands)
+- [Useful links](#useful-links)
 
 ### 1. Open the Task on the MA Platform
 Click the `Make a fork` button. It will open the task repo on GitHub.
