@@ -12,8 +12,6 @@ Connect GitHub to your Mate account.
 - Scroll down and press the `Connect` button next to GitHub.
 - Confirm Mate Academy app authorization.
 
-<header>
-
 ## Follow These Instructions for All HTML/CSS Tasks on GitHub:
 
 1. [Open the task on the MA platform](#open-the-task-on-the-ma-platform)
@@ -39,8 +37,6 @@ Connect GitHub to your Mate account.
 
 - [NPM Commands](#npm-commands)
 - [Useful links](#useful-links)
-
-</header>
 
 ### 1. Open the Task on the MA Platform
 Click the `Make a fork` button. It will open the task repo on GitHub.
