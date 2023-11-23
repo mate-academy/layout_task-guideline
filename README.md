@@ -14,7 +14,7 @@ Connect GitHub to your Mate account.
 
 ## Follow These Instructions for All HTML/CSS Tasks on GitHub:
 
-1. [Open the task on the MA platform](#1-open-the-task-on-the-ma-platform).
+1. [Open the task on the MA platform](open-the-task-on-the-ma-platform).
 2. [Fork the repo](#2-fork-the-repo).
 3. [Check your forked repo URL](#3-you-should-see-your-name-in-the-url-instead-of-mate-academy).
 4. [Clone the forked repo](#4-clone-the-forked-repo).
@@ -38,14 +38,14 @@ Connect GitHub to your Mate account.
 ### 1. Open the Task on the MA Platform
 Click the `Make a fork` button. It will open the task repo on GitHub.
 
-### 2. **Fork** the Repo
+### 2. Fork the Repo
 <details>
   <summary><b>Click the `Fork` button on GitHub</b></summary>
 
   ![How to fork the repo](./images/fork-the-repo.png)
 </details>
 
-### 3. You Should See Your Name in the URL Instead of "mate-academy"
+### 3. Check the URL of the Forked Repo
 After the Fork process is finished, you should see the repo in your account (not the `mate-academy`).
 ![After the repo fork](./images/after-the-repo-fork.png)
 
@@ -62,16 +62,14 @@ Now you can check if it was synced to the MA platform.
   - Delete the repo. ![Delete the repo](./images/delete-the-repo.png)
 </details>
 
-### 4. **Clone** the Forked Repo
+### 4. Clone the Forked Repo
 Now you need to clone the forked project to your computer. Follow the next steps (and see screenshots below):
 
 - Click the green `Code` button.
 - Select the `HTTPS` tab.
 - Ensure the link contains your GitHub name (NOT `mate-academy`).
 - Copy the link.
-- Open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder (
-
-You installed it in the Git and Terminal course).
+- Open **Git Bash** (Windows) or **ZSH** (macOS) in your projects folder (You installed it in the Git and Terminal course).
 - Run `pwd` in the terminal to check that you are in the `projects` folder.
   - If not, navigate to it using the `cd` command with the required path.
 - Clone the repo by running the `git clone` command with the URL you copied on GitHub.
@@ -93,7 +91,7 @@ You installed it in the Git and Terminal course).
 ![Clone the repo](./images/clone-the-repo.png)
 ![Clone success](./images/clone-success.png)
 
-### 5. Open the Project in IDE
+### 5. Open the Project in VSCode
 Now you need to open the project in your code editor (`VSCode`).
 - Run `code project-name` in the terminal (for example, `code layout_hello-world`).
 - You will see the project name as a root folder name in VSCode.
@@ -106,7 +104,7 @@ Now you need to open the project in your code editor (`VSCode`).
   ![The project opened correctly](./images/project-in-vscode-wrong.png)
 </details>
 
-### 6. Open the Terminal in your IDE
+### 6. Open the Terminal
 - Use the shortcut ``ctrl + ` `` (Windows) or ``cmd + ` `` (MacOS).
 - Check if you are inside the project (The project name is the last part in the terminal).
 - Check if the terminal in VSCode is Git Bash (Windows) or ZSH (macOS).
@@ -120,7 +118,7 @@ Now you need to open the project in your code editor (`VSCode`).
  - All the new terminals will be Git Bash (or zsh).
 </details>
 
-### 7. Run `npm install` (or just `npm i`).
+### 7. `npm install` (or just `npm i`).
 And wait until it downloads all the packages and finishes.
 
 > Note: You should run it once for every new task.
@@ -137,7 +135,7 @@ And wait until it downloads all the packages and finishes.
  ![If you run npm install outside the project](./images/if-you-run-npm-i-outside-the-project.png)
 </details>
 
-### 8. Run `npm start` to Check if It Works
+### 8. `npm start` to Open the Page
 
 The command in the terminal will never finish.
 
@@ -172,7 +170,8 @@ Use `+` or just press ``ctrl + shift + ` `` or ``cmd + shift + ` ``.
 
 ![Open one more terminal](./images/open-one-more-terminal.png)
 
-### 10. Create the `Develop` Branch
+### 10. Create the `develop` Branch
+
 Run:
 ```
 git checkout -b develop
@@ -201,7 +200,7 @@ git switch -c develop
 
 You should write the code in `index.html` and other files inside the `src` folder.
 
-### 13. Check the code style
+### 13. `npm run lint` to Check the Code Style
 Run:
 ```
 npm run lint
@@ -242,7 +241,7 @@ npm run lint
   ![HTML autoformat json](./images/html-autoformat-json.png)
 </details>
 
-### 14. Check if your solution matches all the expectations
+### 14. `npm test` to Check if Solution is Correct
 - Read the `checklist.md`;
 - Fix your code if needed;
 - Run `npm run lint` again to ensure nothing is broken.
@@ -266,7 +265,7 @@ Fix your HTML and CSS to make your page identical to the expected result.
 > If you can't run tests for some reason, just use a screenshot from
   `backstop_data/bitmaps_reference/Entire_document.png` to ensure your page looks as expected.
 
-### 15. Prepare your changed files for saving
+### 15. `git add` to Prepare Changed Files for Saving
 ```
 git add ./src
 ```
@@ -277,7 +276,7 @@ git add ./src
 git add readme.md
 ```
 
-### 16. Save your changes
+### 16. `git commit` to Save Changes
 
 Run the `commit` with a message describing what this code does.
 
@@ -311,7 +310,7 @@ git commit -m 'add task solution'
   ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
 </details>
 
-### 17. Send your code to GitHub
+### 17. `git push` to send your code to GitHub
 Run:
 ```
 git push origin develop
@@ -341,7 +340,7 @@ git push origin develop
   ![Add correct origin](./images/add-correct-origin.png)
 </details>
 
-### 18. Publish your site to GitHub Pages.
+### 18. `npm run deploy` to Publish to GitHub Pages.
 Run:
 ```
 npm run deploy
