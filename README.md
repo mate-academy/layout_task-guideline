@@ -30,7 +30,7 @@ Connect GitHub to your Mate account.
 14. [Run `npm t` to pass tests](#codenpm-testcode-to-check-if-solution-is-correct)
 15. [Run `git add ./src` to prepare your code for saving](#codegit-addcode-to-prepare-changed-files-for-saving)
 16. [Run `git commit -m 'add solution'` to save changes](#codegit-commitcode-to-save-changes)
-17. [Run `git push` to send your code to GitHub](#codegit-pushcode-to-send-your-code-to-github)
+17. [Run `git push origin develop` to send your code to GitHub](#codegit-pushcode-to-send-your-code-to-github)
 18. [Run `npm run deploy` to publish your site to GitHub Pages](#codenpm-run-deploycode-to-publish-to-github-pages)
 19. [Create a Pull Request (PR) with a correct description](#create-a-pull-request-pr)
 20. [If you need to update your PR](#to-update-your-pr-repeat-steps-13-18-no-need-to-create-the-pr-one-more-time)
@@ -313,7 +313,7 @@ git commit -m 'add task solution'
   ![Forgot to fix CRLF](./images/forgot-to-fix-crlf.png)
 </details>
 
-### 17. `git push` to send your code to GitHub
+### 17. `git push origin develop` to send your code to GitHub
 Run:
 ```
 git push origin develop
