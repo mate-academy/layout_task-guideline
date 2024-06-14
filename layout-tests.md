@@ -1,7 +1,7 @@
 # Layout tests
 This document describes how tests work in layout tasks on Github
 
-> For any other problem not related to tests check [THE MAIN DOC](./README)
+> For any other problem not related to tests check [THE MAIN DOC](./)
 
 ## Prerequisits
 - You have Node.js 14 (`node -v`)
