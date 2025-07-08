@@ -24,13 +24,13 @@ Connect GitHub to your Mate account.
 8. [Run `npm start` to open the page in a browser](#codenpm-startcode-to-open-the-page)
 9. [Open another terminal](#open-one-more-terminal-for-the-next-steps)
 10. [Create the `develop` branch](#create-the-codedevelopcode-branch)
-11. [Update DEMO and TEST REPORT links](#update-codeDEMO-LINKcode-and-codeTEST-REPORT-LINKcode)
-12. [Implement the task](#implement-the-task-described-in-the-codereadme.mdcode) 
+11. [Update DEMO and TEST REPORT links](#update-codedemo-linkcode-and-codetest-report-linkcode)
+12. [Implement the task](#implement-the-task-described-in-the-readme.md) 
 13. [Run `npm run lint` to check the code style](#codenpm-run-lintcode-to-check-the-code-style)
 14. [Run `npm t` to pass tests](#codenpm-testcode-to-check-if-solution-is-correct)
 15. [Run `git add ./src` to prepare your code for saving](#codegit-addcode-to-prepare-changed-files-for-saving)
 16. [Run `git commit -m 'add solution'` to save changes](#codegit-commitcode-to-save-changes)
-17. [Run `git push origin develop` to send your code to GitHub](#git-push-origin-develop-to-send-your-code-to-github)
+17. [Run `git push origin develop` to send your code to GitHub](#codegit-push-origin-developcode-to-send-your-code-to-github)
 18. [Run `npm run deploy` to publish your site to GitHub Pages](#codenpm-run-deploycode-to-publish-to-github-pages)
 19. [Create a Pull Request (PR) with a correct description](#create-a-pull-request-pr)
 20. [If you need to update your PR](#to-update-your-pr-repeat-steps-13-18-no-need-to-create-the-pr-one-more-time)
@@ -199,7 +199,7 @@ git switch -c develop
 
 ![Update demo link](./images/update-demo-link.png)
 
-### 12. Implement the task described in the `readme.md`. 
+### 12. Implement the task described in the readme.md. 
 
 You should write the code in `index.html` and other files inside the `src` folder.
 
