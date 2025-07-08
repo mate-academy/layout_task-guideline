@@ -25,7 +25,7 @@ Connect GitHub to your Mate account.
 9. [Open another terminal](#open-one-more-terminal-for-the-next-steps)
 10. [Create the `develop` branch](#create-the-codedevelopcode-branch)
 11. [Update DEMO and TEST REPORT links](#update-codedemo-linkcode-and-codetest-report-linkcode)
-12. [Implement the task](#implement-the-task-described-in-the-readme.md) 
+12. [Implement the task](#implement-the-task-described-in-the-readme-md) 
 13. [Run `npm run lint` to check the code style](#codenpm-run-lintcode-to-check-the-code-style)
 14. [Run `npm t` to pass tests](#codenpm-testcode-to-check-if-solution-is-correct)
 15. [Run `git add ./src` to prepare your code for saving](#codegit-addcode-to-prepare-changed-files-for-saving)
