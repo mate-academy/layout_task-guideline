@@ -410,8 +410,6 @@ To check if the page was deployed successfully, you need to check in the project
 scripts work without `sudo`. Correct permissions mean you don't see errors like
 `permission denied` after running commands in the terminal.
 
-The provided text seems mostly correct, but I've made a few adjustments to fix some minor typos and improve clarity:
-
 ## NPM Commands
 - `npm install` installs the project dependencies and runs `postinstall`
   - This creates reference files for pixel-perfect and tests
