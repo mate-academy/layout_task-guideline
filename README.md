@@ -24,13 +24,13 @@ Connect GitHub to your Mate account.
 8. [Run `npm start` to open the page in a browser](#codenpm-startcode-to-open-the-page)
 9. [Open another terminal](#open-one-more-terminal-for-the-next-steps)
 10. [Create the `develop` branch](#create-the-codedevelopcode-branch)
-11. [Update DEMO and TEST REPORT links](#codenpm-testcode-to-check-if-solution-is-correct)
-12. [Implement the task](#codenpm-testcode-to-check-if-solution-is-correct)
-13. [Run `npm run lint` to check the code style](#codenpm-testcode-to-check-if-solution-is-correct)
+11. [Update DEMO and TEST REPORT links](#update-demo-link-and-test-report-link)
+12. [Implement the task](#implement-the-task-described-in-the-readme.md) 
+13. [Run `npm run lint` to check the code style](#npm-run-lint-to-check-the-code-style)
 14. [Run `npm t` to pass tests](#codenpm-testcode-to-check-if-solution-is-correct)
 15. [Run `git add ./src` to prepare your code for saving](#codegit-addcode-to-prepare-changed-files-for-saving)
 16. [Run `git commit -m 'add solution'` to save changes](#codegit-commitcode-to-save-changes)
-17. [Run `git push origin develop` to send your code to GitHub](#codegit-pushcode-to-send-your-code-to-github)
+17. [Run `git push origin develop` to send your code to GitHub](#git-push-origin-develop-to-send-your-code-to-github)
 18. [Run `npm run deploy` to publish your site to GitHub Pages](#codenpm-run-deploycode-to-publish-to-github-pages)
 19. [Create a Pull Request (PR) with a correct description](#create-a-pull-request-pr)
 20. [If you need to update your PR](#to-update-your-pr-repeat-steps-13-18-no-need-to-create-the-pr-one-more-time)
@@ -409,8 +409,6 @@ To check if the page was deployed successfully, you need to check in the project
 > If you use _Linux_, please make sure you adjusted writing permissions to let 
 scripts work without `sudo`. Correct permissions mean you don't see errors like
 `permission denied` after running commands in the terminal.
-
-The provided text seems mostly correct, but I've made a few adjustments to fix some minor typos and improve clarity:
 
 ## NPM Commands
 - `npm install` installs the project dependencies and runs `postinstall`
